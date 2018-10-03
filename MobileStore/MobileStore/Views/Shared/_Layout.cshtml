@@ -4,47 +4,129 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - MobileStore</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/lib/jquery/dist/jquery.js"></script>
         <link rel="stylesheet" href="~/css/site.css" />
+        <link href="~/css/style.css" rel="stylesheet" />
     </environment>
     <environment exclude="Development">
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">MobileStore</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand ml-auto" href="#">Mobile Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="form-inline my-2 my-lg-0 ml-auto">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-danger dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Địa điểm</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">TP. Hồ Chí Minh</a>
+                            <a class="dropdown-item" href="#">Hà Nội</a>
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Iphone 6s..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+                    </div>
+                </div>
+            </form>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item icon-nav">
+                    <a class="nav-link" asp-action="Home"><i class="fas fa-mobile" style="font-size: 1.5em; color: #5d5858;"></i>ĐIỆN THOẠI</a>
+                </li>
+                <li class="nav-item icon-nav">
+                    <a class="nav-link" asp-action="Home"><i class="fas fa-tablet" style="font-size: 1.5em; color: #5d5858;"></i>TABLET</a>
+                </li>
+                <li class="nav-item icon-nav">
+                    <a class="nav-link" asp-action="Home"><i class="fas fa-laptop" style="font-size: 1.5em; color: #5d5858;"></i>LAPTOP</a>
+                </li>
+                <li class="nav-item icon-nav">
+                    <a class="nav-link" asp-action="Home"><i class="fas fa-headphones-alt" style="font-size: 1.5em; color: #5d5858;"></i>PHỤ KIỆN</a>
+                </li>
+                <li class="nav-item icon-nav">
+                    <a class="nav-link" asp-action="Home"><i class="fas fa-sync-alt" style="font-size: 1.5em; color: #5d5858;"></i>HÀNG CŨ</a>
+                </li>
+                <li class="nav-item icon-nav">
+                    <a class="nav-link" asp-action="Home"><i class="fas fa-user-alt" style="font-size: 1.5em; color: #5d5858;"></i>HỎI ĐÁP</a>
+                </li>
+            </ul>
         </div>
     </nav>
-
     <partial name="_CookieConsentPartial" />
-
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2018 - MobileStore</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Thông tin liên lạc</h5>
+                    <p>
+                        Gọi mua hàng: 1900.6480 (1000đ/phút)
+                        <br />Khiếu nại, góp ý: 028.7106.6123
+                        Thời gian phục vụ: 8h - 22h
+                        Email: cskh@mobilestore.com.vn
+                    </p>
+                    <a href="#">
+                        <img src="https://cellphones.com.vn/media/wysiwyg/thongbao.png" />
+                    </a>
+                </div>
+                <div class="col-md-4 remove-dot">
+                    <h5>Thông tin hỗ trợ</h5>
+                    <ul>
+                        <a href="#">
+                            <li>Giới thiệu</li>
+                        </a>
+                        <a href="#">
+                            <li>Bán hàng Doanh nghiệp</li>
+                        </a>
+                        <a href="#">
+                            <li>Chính sách bảo mật</li>
+                        </a>
+                        <a href="#">
+                            <li>Hướng dẫn huỷ giao dịch, đổi trả</li>
+                        </a>
+                    </ul>
+                    <div class="payment-method">
+                        <a href="#">
+                            <i class="fab fa-cc-visa"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-cc-mastercard"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-cc-paypal"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 remove-dot">
+                    <h5>Thông tin hỗ trợ</h5>
+                    <ul>
+                        <a href="#">
+                            <li>Giới thiệu</li>
+                        </a>
+                        <a href="#">
+                            <li>Tin công nghệ Sforum</li>
+                        </a>
+                        <a href="#">
+                            <li>Chính sách Bảo hành</li>
+                        </a>
+                        <a href="#">
+                            <li>Tuyển dụng</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <div class="text-center">Copyright &copy; 2018 Mobile Store. All Rights Reserved.</div>
         </footer>
     </div>
 

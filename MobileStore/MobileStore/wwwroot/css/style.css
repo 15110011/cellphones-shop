@@ -1,0 +1,26 @@
+﻿.right-banner img{
+    height: 135px;
+    width: 345px;
+}
+.icon-nav a{
+    display: grid;
+    text-align: center;
+}
+.bg-light {
+    background: #fed700!important;
+}
+.remove-dot ul{
+    list-style-type: none;
+    line-height: 2em;
+}
+.remove-dot a{
+    text-decoration: none;
+    color: black;
+}
+.remove-dot a:hover{
+    color: dimgrey;
+}
+.payment-method a{
+    font-size: 25px;
+    padding: 0 5px;
+}
