@@ -10,8 +10,13 @@
 
   <ItemGroup>
     <Folder Include="Components\" />
+    <Folder Include="Data\Mocks\" />
+    <Folder Include="Data\Interfaces\" />
     <Folder Include="ViewModels\" />
     <Folder Include="TagHelpers\" />
+    <Folder Include="Views\Account\" />
+    <Folder Include="Views\ShoppingCart\" />
+    <Folder Include="Views\Phone\" />
   </ItemGroup>
 
 </Project>

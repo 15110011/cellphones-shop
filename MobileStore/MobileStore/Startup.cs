@@ -44,8 +44,8 @@ namespace MobileStore
         {
             app.UseDeveloperExceptionPage();
             app.UseStatusCodePages();
-            app.UseSession();
-            app.UseIdentity();
+            //app.UseSession();
+            //app.UseIdentity();
 
             if (env.IsDevelopment())
             {
