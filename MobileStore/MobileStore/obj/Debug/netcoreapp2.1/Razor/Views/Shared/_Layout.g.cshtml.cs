@@ -69,7 +69,7 @@ using MobileStore.Models;
             WriteLiteral("<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(25, 1437, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6d103d4b4fb94917bf4179a17a2b695b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a0984444d4d4fcfba38c020ba02fc63", async() => {
                 BeginContext(31, 121, true);
                 WriteLiteral("\r\n    <meta charset=\"utf-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n    <title>");
                 EndContext();
@@ -90,12 +90,12 @@ using MobileStore.Models;
                 WriteLiteral("ous\"></script>\r\n    ");
                 EndContext();
                 BeginContext(1214, 176, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("environment", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "19e558f17323403c9b25992fc1bfd326", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("environment", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c9db3510762f4bfdadb98dbd1ed99ffa", async() => {
                     BeginContext(1249, 12, true);
                     WriteLiteral("\r\n\r\n        ");
                     EndContext();
                     BeginContext(1261, 47, false);
-                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "cc4ab8fba5994fceacd4482973ec3b65", async() => {
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "95a913b831fe42da88d6704c39c8cd58", async() => {
                     }
                     );
                     __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -114,7 +114,7 @@ using MobileStore.Models;
                     WriteLiteral("\r\n        ");
                     EndContext();
                     BeginContext(1318, 48, false);
-                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "1540842ea99945a4a5ae135ddc9271b9", async() => {
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "9c9cfb264288478a9c1f1d9243ffb571", async() => {
                     }
                     );
                     __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -150,7 +150,7 @@ using MobileStore.Models;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(1396, 57, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("environment", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c321b66475b5482387cb27f0e97af481", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("environment", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8124d48e29a245caada0d241b6d08028", async() => {
                     BeginContext(1431, 8, true);
                     WriteLiteral("\r\n\r\n    ");
                     EndContext();
@@ -187,7 +187,7 @@ using MobileStore.Models;
             WriteLiteral("v \r\n");
             EndContext();
             BeginContext(1466, 5687, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f82df0a4b8734d9ea0e96d4573ca73b7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "566ff96276a94d23b04b2a483072059e", async() => {
                 BeginContext(1472, 514, true);
                 WriteLiteral(@"
     <nav class=""navbar navbar-expand-lg navbar-light bg-light fixed-top"">
@@ -199,7 +199,7 @@ using MobileStore.Models;
             ");
                 EndContext();
                 BeginContext(1986, 992, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "10bdae9cc66847e3a71b504f33d90569", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fb29b28833fd4fdf9f97e2c84ab56324", async() => {
                     BeginContext(2033, 938, true);
                     WriteLiteral(@"
                 <div class=""input-group"">
@@ -236,7 +236,7 @@ using MobileStore.Models;
                 WriteLiteral("\r\n            <ul class=\"navbar-nav ml-auto\">\r\n                <li class=\"nav-item icon-nav\">\r\n                    ");
                 EndContext();
                 BeginContext(3093, 125, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "549df4f88dcf4f26bf1d689f8a7ce8d5", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "720bd11cb2d34f2a96be86fa9f171a51", async() => {
                     BeginContext(3131, 83, true);
                     WriteLiteral("<i class=\"fas fa-mobile\" style=\"font-size: 1.5em; color: #5d5858;\"></i>ĐIỆN THOẠI");
                     EndContext();
@@ -259,7 +259,7 @@ using MobileStore.Models;
                 WriteLiteral("\r\n                </li>\r\n                <li class=\"nav-item icon-nav\">\r\n                    ");
                 EndContext();
                 BeginContext(3311, 119, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b1e164cf3510404ba2bfd6e0b8943136", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f8e97c07c41a48e796a0d6a5361a980d", async() => {
                     BeginContext(3349, 77, true);
                     WriteLiteral("<i class=\"fas fa-tablet\" style=\"font-size: 1.5em; color: #5d5858;\"></i>TABLET");
                     EndContext();
@@ -282,7 +282,7 @@ using MobileStore.Models;
                 WriteLiteral("\r\n                </li>\r\n                <li class=\"nav-item icon-nav\">\r\n                    ");
                 EndContext();
                 BeginContext(3523, 119, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0ffea90d8257480780b1ff535cac64ba", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3e45a09376a54dfba81814903a92a089", async() => {
                     BeginContext(3561, 77, true);
                     WriteLiteral("<i class=\"fas fa-laptop\" style=\"font-size: 1.5em; color: #5d5858;\"></i>LAPTOP");
                     EndContext();
@@ -305,7 +305,7 @@ using MobileStore.Models;
                 WriteLiteral("\r\n                </li>\r\n                <li class=\"nav-item icon-nav\">\r\n                    ");
                 EndContext();
                 BeginContext(3735, 131, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "900e867a8f404991be8fb289c4845609", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c08200b3a47246d697b86a60ad6b349e", async() => {
                     BeginContext(3773, 89, true);
                     WriteLiteral("<i class=\"fas fa-headphones-alt\" style=\"font-size: 1.5em; color: #5d5858;\"></i>PHỤ KIỆN");
                     EndContext();
@@ -328,7 +328,7 @@ using MobileStore.Models;
                 WriteLiteral("\r\n                </li>\r\n                <li class=\"nav-item icon-nav\">\r\n                    ");
                 EndContext();
                 BeginContext(3959, 124, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "be1118a420ab4e7687219784b81eb21a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e68b401722cb4e7b823aff269fcc2679", async() => {
                     BeginContext(3997, 82, true);
                     WriteLiteral("<i class=\"fas fa-sync-alt\" style=\"font-size: 1.5em; color: #5d5858;\"></i>HÀNG CŨ");
                     EndContext();
@@ -351,7 +351,7 @@ using MobileStore.Models;
                 WriteLiteral("\r\n                </li>\r\n                <li class=\"nav-item icon-nav\">\r\n                    ");
                 EndContext();
                 BeginContext(4176, 124, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "368db16779f949edaca648c91d8b1ba9", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1ddae083eeaf448f800585d2e4d959ae", async() => {
                     BeginContext(4214, 82, true);
                     WriteLiteral("<i class=\"fas fa-user-alt\" style=\"font-size: 1.5em; color: #5d5858;\"></i>HỎI ĐÁP");
                     EndContext();
@@ -374,7 +374,7 @@ using MobileStore.Models;
                 WriteLiteral("\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </nav>\r\n    ");
                 EndContext();
                 BeginContext(4376, 40, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "29c05824b8164637924d79a56fa728b3", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b857a1327f4949e1aaa302db79d7388c", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();

@@ -8,8 +8,8 @@ namespace MobileStore.Data.Interfaces
 {
     public interface IPhoneRepository
     {
-        IEnumerable<Phone> Phones { get; }
-        IEnumerable<Phone> PreferedPhones { get;  }
+        IEnumerable<Phone> Phones { get;}
+        IEnumerable<Phone> PreferedPhones { get;}
         Phone GetPhoneById(int phoneId);
     }
 }
