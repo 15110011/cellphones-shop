@@ -62,3 +62,4 @@ C:\Users\Twisted\Desktop\cellphones-shop\MobileStore\MobileStore\obj\Debug\netco
 C:\Users\Twisted\Desktop\cellphones-shop\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\MobileStore.dll
 C:\Users\Twisted\Desktop\cellphones-shop\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\MobileStore.pdb
 C:\Users\Twisted\Desktop\cellphones-shop\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\MobileStore.csproj.CopyComplete
+C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\Razor\Views\Phone\List.g.cshtml.cs
