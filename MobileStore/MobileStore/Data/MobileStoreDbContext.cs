@@ -11,7 +11,7 @@ namespace MobileStore
         {
         }
 
-        public DbSet<Phone> Drinks { get; set; }
+        public DbSet<Phone> Phones { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<ShoppingCartItem> ShoppingCartItems { get; set; }
         public DbSet<Order> Orders { get; set; }

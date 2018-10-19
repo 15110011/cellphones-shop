@@ -1,0 +1,18 @@
+﻿@using MobileStore.Data.Models
+
+@model IEnumerable<Phone>
+<div>
+    <h2>
+        All Phones are show here
+    </h2>
+</div>
+@{
+    foreach (var phone in Model)
+    {
+        <div>
+            <h4>Phone name: @phone.Name</h4>
+            <p>Price : @phone.Price.ToString("c")</p>
+        </div>
+    }
+}
+

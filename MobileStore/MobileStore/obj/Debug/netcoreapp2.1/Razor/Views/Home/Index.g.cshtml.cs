@@ -13,12 +13,12 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
-#line 1 "C:\Users\Twisted\Desktop\cellphones-shop\MobileStore\MobileStore\Views\_ViewImports.cshtml"
+#line 1 "C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\Views\_ViewImports.cshtml"
 using MobileStore;
 
 #line default
 #line hidden
-#line 2 "C:\Users\Twisted\Desktop\cellphones-shop\MobileStore\MobileStore\Views\_ViewImports.cshtml"
+#line 2 "C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\Views\_ViewImports.cshtml"
 using MobileStore.Models;
 
 #line default
@@ -61,7 +61,7 @@ using MobileStore.Models;
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
-#line 1 "C:\Users\Twisted\Desktop\cellphones-shop\MobileStore\MobileStore\Views\Home\Index.cshtml"
+#line 1 "C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\Views\Home\Index.cshtml"
   
     ViewData["Title"] = "Home Page";
 
