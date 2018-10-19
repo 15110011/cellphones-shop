@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 
 /******************************
@@ -1049,15 +1049,13 @@ section
 	padding-left: 32px;
 	padding-bottom: 44px;
 }
-.avds_large_content
-{
-	max-width: 567px;
-	height: 100%;
-	background: rgba(0,0,0,0.63);
-	padding-right: 130px;
-	padding-left: 30px;
-	padding-top: 51px;
-	padding-bottom: 30px;
+.avds_large_content {
+    max-width: 567px;
+    height: 100%;
+    background: rgba(59, 72, 88, 0.63);
+    padding-left: 30px;
+    padding-top: 51px;
+    padding-bottom: 30px;
 }
 .avds_text
 {
@@ -1131,7 +1129,6 @@ section
 {
 	position: absolute;
 	top: 0;
-	left: 54px;
 	width: 66px;
 	height: 36px;
 	text-align: center;
@@ -1140,7 +1137,6 @@ section
 	-ms-transform-origin: top left;
 	-o-transform-origin: top left;
 	transform-origin: top left;
-	transform: rotate(90deg);
 }
 .product_extra a
 {
@@ -1193,15 +1189,14 @@ section
 	background-size: cover;
 	background-position: center center;
 }
-.avds_xl_content
-{
-	width: 391px;
-	height: 100%;
-	background: #e95a5a;
-	float: right;
-	padding-top: 28px;
-	padding-left: 42px;
-	padding-right: 30px;
+.avds_xl_content {
+    width: 391px;
+    height: 100%;
+    background: rgba(82, 84, 95, 0.82);
+    float: right;
+    padding-top: 28px;
+    padding-left: 42px;
+    padding-right: 30px;
 }
 .avds_xl_link
 {
