@@ -1,18 +1,35 @@
 ﻿@using MobileStore.Data.Models
 
 @model IEnumerable<Phone>
-<div>
-    <h2>
-        All Phones are show here
-    </h2>
-</div>
-@{
-    foreach (var phone in Model)
-    {
-        <div>
-            <h4>Phone name: @phone.Name</h4>
-            <p>Price : @phone.Price.ToString("c")</p>
+
+    <div>
+        <h2>
+            All Phones are show here
+        </h2>
+    </div>
+    <div class="products">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <div class="product_grid">
+                        @{
+                            foreach (var phone in Model)
+                            {
+                                <div class="product">
+                                    <div class="product_image"><img src="@phone.ImageUrl" alt=""></div>
+                                    <div class="product_extra product_new"><a href="categories.html">@phone.ShortDescription</a></div>
+                                    <div class="product_content">
+                                        <div class="product_title"><a href="product.html">@phone.Name</a></div>
+                                        <div class="product_price">@phone.Price.ToString("c")</div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
         </div>
-    }
-}
+    </div>
+
 
