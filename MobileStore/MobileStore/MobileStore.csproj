@@ -13,14 +13,13 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.1.1" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />  
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Components\" />
     <Folder Include="TagHelpers\" />
     <Folder Include="Views\Account\" />
-    <Folder Include="Views\ShoppingCart\" />
   </ItemGroup>
 
 </Project>

@@ -12,6 +12,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MobileStore.Data.Interfaces;
 using MobileStore.Data.Mocks;
+using MobileStore.Data.Models;
 using MobileStore.Data.Repository;
 
 namespace MobileStore
@@ -45,6 +46,11 @@ namespace MobileStore
 
             services.AddDbContext<MobileStoreDbContext>(options =>
             options.UseSqlServer(_configurationRoot.GetConnectionString("DefaultConnection")));
+
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddScoped(sp => ShoppingCart.GetCart(sp));
+            services.AddMemoryCache();
+            services.AddSession();
         }
          
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,7 +58,7 @@ namespace MobileStore
         {
             app.UseDeveloperExceptionPage();
             app.UseStatusCodePages();
-            //app.UseSession();
+            app.UseSession();
             //app.UseIdentity();
 
             if (env.IsDevelopment())

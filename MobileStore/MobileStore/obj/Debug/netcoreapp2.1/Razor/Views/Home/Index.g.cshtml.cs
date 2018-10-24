@@ -375,7 +375,7 @@ using MobileStore.ViewModels;
                             ");
             EndContext();
             BeginContext(12918, 307, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1c5bf553f48d486eb5ce0dcaeb6caf14", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e15cc861c91f4a58aa980278ddc5fc7d", async() => {
                 BeginContext(12980, 238, true);
                 WriteLiteral("\r\n                                <input type=\"email\" class=\"newsletter_input\" required=\"required\">\r\n                                <button class=\"newsletter_button trans_200\"><span>Subscribe</span></button>\r\n                            ");
                 EndContext();
