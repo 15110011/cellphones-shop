@@ -2,8 +2,8 @@
     ViewData["Title"] = "Home Page";
 }
 @using MobileStore.Data.Models;
-@model IEnumerable<Phone>; 
 
+@model IEnumerable<Phone>
 <div class="super_container">
 
     <!-- Home -->
@@ -166,19 +166,11 @@
                     <div class="product_grid">
 
                         @{
-                            foreach (var phone in Model)
+                            foreach(Phone phone in Model)
                             {
                                 if (phone.ShortDescription == "New")
-                                {
-                                    <!-- Product -->
-                                    <div class="product">
-                                        <div class="product_image"><img src="@phone.ImageUrl" alt=""></div>
-                                        <div class="product_extra product_new"><a href="categories.html">New</a></div>
-                                        <div class="product_content">
-                                            <div class="product_title"><a href="product.html">@phone.Name</a></div>
-                                            <div class="product_price">@phone.Price.ToString("c")</div>
-                                        </div>
-                                    </div>
+                                {                                                             
+                                     @Html.Partial("PhonesSummary", phone)                                  
                                 }
                             }
                         }
@@ -192,17 +184,10 @@
                 <div class="col">
                     <div class="product_grid">
                         @{
-                            foreach (var phone in Model)
+                            foreach (Phone phone in Model)
                             {
-                                <!-- Product -->
-                                <div class="product">
-                                    <div class="product_image"><img src="@phone.ImageUrl" alt=""></div>
-                                    <div class="product_extra product_sale"><a href="categories.html">Sale</a></div>
-                                    <div class="product_content">
-                                        <div class="product_title"><a href="product.html">@phone.Name</a></div>
-                                        <div class="product_price">@phone.Price.ToString("c")</div>
-                                    </div>
-                                </div>
+                                <!-- Product -->                                
+                               @Html.Partial("PhonesSummary", phone)                               
                             }
                         }
                     </div>
