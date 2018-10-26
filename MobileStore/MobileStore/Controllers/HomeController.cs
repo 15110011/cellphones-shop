@@ -4,15 +4,24 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using MobileStore.Data.Interfaces;
 using MobileStore.Models;
 
 namespace MobileStore.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly ICategoryRepository _categoryRepository;
+        private readonly IPhoneRepository _phoneRepository;
+        public HomeController(ICategoryRepository categoryRepository, IPhoneRepository phoneRepository)
+        {
+            _categoryRepository = categoryRepository;
+            _phoneRepository = phoneRepository;
+        }
         public IActionResult Index()
         {
-            return View();
+            var phones = _phoneRepository.Phones;
+            return View(phones);
         }
 
         public IActionResult About()

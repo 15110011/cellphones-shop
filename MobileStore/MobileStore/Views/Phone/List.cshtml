@@ -1,0 +1,22 @@
+﻿@using MobileStore.Data.Models
+
+      <div class="products">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <div class="product_grid">
+                     @{
+                        foreach(Phone phone in Model)
+                        {
+                            @Html.Partial("PhonesSummary", phone)
+                        }
+                     }
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+

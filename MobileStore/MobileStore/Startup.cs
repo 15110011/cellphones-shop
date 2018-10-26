@@ -10,14 +10,22 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MobileStore.Data.Interfaces;
+using MobileStore.Data.Mocks;
+using MobileStore.Data.Models;
+using MobileStore.Data.Repository;
 
 namespace MobileStore
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        private IConfigurationRoot _configurationRoot;
+        public Startup(IHostingEnvironment hostingEnvironment)
         {
-            Configuration = configuration;
+            //Configuration = configuration;
+            _configurationRoot = new ConfigurationBuilder().SetBasePath(hostingEnvironment.ContentRootPath)
+                .AddJsonFile("appsettings.json") 
+                .Build();
         }
 
         public IConfiguration Configuration { get; }
@@ -32,19 +40,25 @@ namespace MobileStore
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
+            services.AddTransient<IPhoneRepository, PhoneRepository>();
+            services.AddTransient<ICategoryRepository, CategoryRepository>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<MobileStoreDbContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("MobileStoreDbContext")));
-        }
+            options.UseSqlServer(_configurationRoot.GetConnectionString("DefaultConnection")));
 
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddScoped(sp => ShoppingCart.GetCart(sp));
+            services.AddMemoryCache();
+            services.AddSession();
+        }
+         
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             app.UseDeveloperExceptionPage();
             app.UseStatusCodePages();
-            //app.UseSession();
+            app.UseSession();
             //app.UseIdentity();
 
             if (env.IsDevelopment())
