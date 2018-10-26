@@ -1,7 +1,11 @@
 ﻿@model Phone 
 
 <div class="product">
-    <div class="product_image"><img src="@Model.ImageUrl" alt=""></div>
+    <div class="product_image">
+        <a href="Product/Index">
+            <img src="@Model.ImageUrl" alt="">
+        </a>
+    </div>
     <div class="product_extra product_new"><a href="categories.html">@Model.ShortDescription</a></div>
     <div class="product_content text-center">
         <div class="product_title"><a href="product.html">@Model.Name</a></div>
