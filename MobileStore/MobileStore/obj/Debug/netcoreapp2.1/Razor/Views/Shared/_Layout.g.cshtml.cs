@@ -85,8 +85,13 @@ using MobileStore.ViewModels;
             BeginContext(0, 29, true);
             WriteLiteral("\r\n\r\n<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
+<<<<<<< HEAD
             BeginContext(29, 814, false);
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bdc3154673a74e318f19f3b440e17eb6", async() => {
+=======
+            BeginContext(29, 804, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "da1a591c331d4e37bb4c8da00c4e680c", async() => {
+>>>>>>> 0031e1ddccc8541fe0a595a4de53d4afab708f88
                 BeginContext(35, 257, true);
                 WriteLiteral(@"
     <title>Mobile Store</title>
@@ -97,7 +102,11 @@ using MobileStore.ViewModels;
     ");
                 EndContext();
                 BeginContext(292, 69, false);
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "a9cb75b52858442390786bc5f0a846fd", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "6d3736e1a39b408b96bc7cdbd8b2326e", async() => {
+>>>>>>> 0031e1ddccc8541fe0a595a4de53d4afab708f88
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -116,7 +125,11 @@ using MobileStore.ViewModels;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(367, 82, false);
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "473434d81fec4076bd78752e3cc59853", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "0c0b8e7711c146e08eec1e97712d969b", async() => {
+>>>>>>> 0031e1ddccc8541fe0a595a4de53d4afab708f88
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -135,7 +148,11 @@ using MobileStore.ViewModels;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(455, 78, false);
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "867b995dbbbe46ee928b1ad614d2a803", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "cd9001fa3ad04f6aa5ea42f356eb3798", async() => {
+>>>>>>> 0031e1ddccc8541fe0a595a4de53d4afab708f88
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -154,7 +171,11 @@ using MobileStore.ViewModels;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(539, 83, false);
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "21bfa95a45c14570ac4bdc9aeaf9c6a8", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "f9296e80281e41f0bf0f076103d0e40f", async() => {
+>>>>>>> 0031e1ddccc8541fe0a595a4de53d4afab708f88
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -173,7 +194,11 @@ using MobileStore.ViewModels;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(628, 73, false);
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b3ce089b88c94d4c954b0a6d969619f8", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b7efc78b5b1046259a83767602a5b71a", async() => {
+>>>>>>> 0031e1ddccc8541fe0a595a4de53d4afab708f88
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -192,7 +217,11 @@ using MobileStore.ViewModels;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(707, 56, false);
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "65c68e50200c4df18ce5b0a07a3897a6", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "2302113862724efea2257a6e874a6a07", async() => {
+>>>>>>> 0031e1ddccc8541fe0a595a4de53d4afab708f88
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -211,7 +240,11 @@ using MobileStore.ViewModels;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(769, 55, false);
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "65be9868e99a49f3a1ac5955fa1507a8", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ec21326f11d94e91a7dfabbe70b182a6", async() => {
+>>>>>>> 0031e1ddccc8541fe0a595a4de53d4afab708f88
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -244,9 +277,15 @@ using MobileStore.ViewModels;
             BeginContext(843, 2, true);
             WriteLiteral("\r\n");
             EndContext();
+<<<<<<< HEAD
             BeginContext(845, 14149, false);
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3239906dc2c340798789086aeec02980", async() => {
                 BeginContext(851, 6457, true);
+=======
+            BeginContext(835, 13750, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "54a2fcb9baa840b1b7275e2138061663", async() => {
+                BeginContext(841, 6509, true);
+>>>>>>> 0031e1ddccc8541fe0a595a4de53d4afab708f88
                 WriteLiteral(@"
     <div class=""super_container"">
 
@@ -345,9 +384,15 @@ using MobileStore.ViewModels;
                             <div class=""search_panel_content d-flex flex-row align-items-center justify-content-end"">
                                 ");
                 EndContext();
+<<<<<<< HEAD
                 BeginContext(7308, 177, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a202918c181146678472ff3bcbee88ab", async() => {
                     BeginContext(7325, 153, true);
+=======
+                BeginContext(7350, 177, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "52368609fb6c475480d293c2bdf2a5cd", async() => {
+                    BeginContext(7367, 153, true);
+>>>>>>> 0031e1ddccc8541fe0a595a4de53d4afab708f88
                     WriteLiteral("\r\n                                    <input type=\"text\" class=\"search_input\" placeholder=\"Search\" required=\"required\">\r\n                                ");
                     EndContext();
                 }
@@ -393,9 +438,15 @@ using MobileStore.ViewModels;
                     <div class=""page_menu_search menu_mm"">
                         ");
                 EndContext();
+<<<<<<< HEAD
                 BeginContext(8426, 197, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7731c462ffed4100a863bbb992a56747", async() => {
                     BeginContext(8443, 173, true);
+=======
+                BeginContext(8468, 197, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "26546568d9564079bdb9333fcd942c4e", async() => {
+                    BeginContext(8485, 173, true);
+>>>>>>> 0031e1ddccc8541fe0a595a4de53d4afab708f88
                     WriteLiteral("\r\n                            <input type=\"search\" required=\"required\" class=\"page_menu_search_input menu_mm\" placeholder=\"Search for products...\">\r\n                        ");
                     EndContext();
                 }
@@ -459,8 +510,13 @@ using MobileStore.ViewModels;
 
         ");
                 EndContext();
+<<<<<<< HEAD
                 BeginContext(11666, 40, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d1d41c57e8f74ceaa9940a8203312676", async() => {
+=======
+                BeginContext(11708, 40, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "f185e3173ab94e90aea97210d3415ccb", async() => {
+>>>>>>> 0031e1ddccc8541fe0a595a4de53d4afab708f88
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
@@ -520,8 +576,13 @@ using MobileStore.ViewModels;
     </div>
     ");
                 EndContext();
+<<<<<<< HEAD
                 BeginContext(13706, 48, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "253fcb615477482ebe090f94d12323d2", async() => {
+=======
+                BeginContext(13745, 48, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8963bdd6d7b34efb839d0f6bd23ab256", async() => {
+>>>>>>> 0031e1ddccc8541fe0a595a4de53d4afab708f88
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -538,8 +599,13 @@ using MobileStore.ViewModels;
                 BeginContext(13754, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
+<<<<<<< HEAD
                 BeginContext(13760, 52, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5cc7fd8203bc4fa2ae81ca524a45e928", async() => {
+=======
+                BeginContext(13799, 52, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7879e8e0f445466c80bb62b979d2f08f", async() => {
+>>>>>>> 0031e1ddccc8541fe0a595a4de53d4afab708f88
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -556,8 +622,13 @@ using MobileStore.ViewModels;
                 BeginContext(13812, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
+<<<<<<< HEAD
                 BeginContext(13818, 59, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f1433a0c39c3420eae32cabbbf51b25c", async() => {
+=======
+                BeginContext(13857, 59, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1194ba123f9448148d78d72612e8abbf", async() => {
+>>>>>>> 0031e1ddccc8541fe0a595a4de53d4afab708f88
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -574,8 +645,13 @@ using MobileStore.ViewModels;
                 BeginContext(13877, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
+<<<<<<< HEAD
                 BeginContext(13883, 59, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "186b199116e842c48c6b0aab97e06e73", async() => {
+=======
+                BeginContext(13922, 59, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c511c5c6e6bf4db88614d89d79837c9f", async() => {
+>>>>>>> 0031e1ddccc8541fe0a595a4de53d4afab708f88
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -592,8 +668,13 @@ using MobileStore.ViewModels;
                 BeginContext(13942, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
+<<<<<<< HEAD
                 BeginContext(13948, 62, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "62f34dc9d2774ccf9cc889af09ca4afa", async() => {
+=======
+                BeginContext(13987, 62, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7674f89f8b0e4512a5cb8fed2ee45484", async() => {
+>>>>>>> 0031e1ddccc8541fe0a595a4de53d4afab708f88
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -610,8 +691,13 @@ using MobileStore.ViewModels;
                 BeginContext(14010, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
+<<<<<<< HEAD
                 BeginContext(14016, 64, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "28466e8a7cc943b5b68b97b719c88ce9", async() => {
+=======
+                BeginContext(14055, 64, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6b2a0fb897a245e18f8cd511e6ae30be", async() => {
+>>>>>>> 0031e1ddccc8541fe0a595a4de53d4afab708f88
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -628,8 +714,13 @@ using MobileStore.ViewModels;
                 BeginContext(14080, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
+<<<<<<< HEAD
                 BeginContext(14086, 65, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f9f03d0c21b14a65a9d9cb5703b797b8", async() => {
+=======
+                BeginContext(14125, 65, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c6f9b03bd6134189a350e700bd6a782f", async() => {
+>>>>>>> 0031e1ddccc8541fe0a595a4de53d4afab708f88
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -646,8 +737,13 @@ using MobileStore.ViewModels;
                 BeginContext(14151, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
+<<<<<<< HEAD
                 BeginContext(14157, 65, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "45b122b3d62342f6b7727773f84b511c", async() => {
+=======
+                BeginContext(14196, 65, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8cd61132e0b442ed8bee79d2bf823e14", async() => {
+>>>>>>> 0031e1ddccc8541fe0a595a4de53d4afab708f88
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -664,8 +760,13 @@ using MobileStore.ViewModels;
                 BeginContext(14222, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
+<<<<<<< HEAD
                 BeginContext(14228, 68, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "30b2866facc14cd99e7f3025b5762511", async() => {
+=======
+                BeginContext(14267, 68, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b8fc85f1bff54582a0d4fe16effe22fa", async() => {
+>>>>>>> 0031e1ddccc8541fe0a595a4de53d4afab708f88
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -682,8 +783,13 @@ using MobileStore.ViewModels;
                 BeginContext(14296, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
+<<<<<<< HEAD
                 BeginContext(14302, 61, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c4f029c8218547059a6e0d916d9d98b1", async() => {
+=======
+                BeginContext(14341, 61, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "96415906bd9742d996b35aa277ae43c0", async() => {
+>>>>>>> 0031e1ddccc8541fe0a595a4de53d4afab708f88
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -700,8 +806,13 @@ using MobileStore.ViewModels;
                 BeginContext(14363, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
+<<<<<<< HEAD
                 BeginContext(14369, 50, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "12dba6ca04f041a28e8319cdc7ffb7f8", async() => {
+=======
+                BeginContext(14408, 50, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4fd79e592d8f4901bf721d2ea1ad7b41", async() => {
+>>>>>>> 0031e1ddccc8541fe0a595a4de53d4afab708f88
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -718,8 +829,13 @@ using MobileStore.ViewModels;
                 BeginContext(14419, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
+<<<<<<< HEAD
                 BeginContext(14425, 68, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "220f4529cc9c462e8f619241e62a183d", async() => {
+=======
+                BeginContext(14464, 68, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "45d3f4a9e62e47b5ba19a47f0592eb22", async() => {
+>>>>>>> 0031e1ddccc8541fe0a595a4de53d4afab708f88
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -736,8 +852,13 @@ using MobileStore.ViewModels;
                 BeginContext(14493, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
+<<<<<<< HEAD
                 BeginContext(14499, 38, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "01e13422d2a84f6692a601280cd1b41d", async() => {
+=======
+                BeginContext(14538, 38, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "058478d00e5746159bc49e3ab988aca7", async() => {
+>>>>>>> 0031e1ddccc8541fe0a595a4de53d4afab708f88
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
