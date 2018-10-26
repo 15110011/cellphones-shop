@@ -1,5 +1,3 @@
-MobileStore/.vs/MobileStore
-MobileStore/.vs/config/applicationhost.config
-MobileStore/MobileStore/MobileStore.csproj
-MobileStore/MobileStore/bin/Debug/netcoreapp2.1
-MobileStore/MobileStore/obj/Debug/netcoreapp2.1
+MobileStore/.vs
+MobileStore/MobileStore/bin/
+MobileStore/MobileStore/obj/
