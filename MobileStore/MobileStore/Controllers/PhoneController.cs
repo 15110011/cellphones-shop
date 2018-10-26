@@ -21,6 +21,8 @@ namespace MobileStore.Controllers
             var phones = _phoneRepository.Phones;
             return View(phones); 
         }
+
+
     }
     
 }
