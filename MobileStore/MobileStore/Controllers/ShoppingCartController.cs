@@ -3,16 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+<<<<<<< HEAD
 using MobileStore.Data.Interfaces;
 using MobileStore.Data.Models;
 using MobileStore.ViewModels;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
+=======
+>>>>>>> 97dada6cfccfd6c530a06001efe3080f7da79001
 
 namespace MobileStore.Controllers
 {
     public class ShoppingCartController : Controller
+<<<<<<< HEAD
     {       
         private readonly IPhoneRepository _phoneRepository;
         private readonly ShoppingCart _shoppingCart;
@@ -58,4 +62,12 @@ namespace MobileStore.Controllers
 
     }      
     
+=======
+    {
+        public IActionResult Index()
+        {
+            return View();
+        }
+    }
+>>>>>>> 97dada6cfccfd6c530a06001efe3080f7da79001
 }
