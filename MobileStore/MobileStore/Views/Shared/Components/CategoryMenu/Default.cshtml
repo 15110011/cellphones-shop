@@ -1,0 +1,12 @@
+﻿<li class="hassubs">
+    <a href="#">Categories</a>
+    <ul>
+        @foreach (var category in Model)
+        {
+            <li>
+                <a asp-controller="Phone" asp-action="List"
+                   asp-route-category="@category.CategoryName">@category.CategoryName</a>
+            </li>
+        }      
+    </ul>
+</li>

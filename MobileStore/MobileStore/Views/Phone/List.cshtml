@@ -1,5 +1,5 @@
 ﻿@using MobileStore.Data.Models
-
+@model PhonesListViewModel
       <div class="products">
         <div class="container">
             <div class="row">
@@ -7,7 +7,7 @@
 
                     <div class="product_grid">
                      @{
-                        foreach(Phone phone in Model)
+                        foreach(Phone phone in Model.Phones)
                         {
                             @Html.Partial("PhonesSummary", phone)
                         }

@@ -2,21 +2,10 @@
 <link href="~/style/main_styles.css" rel="stylesheet" />
 <link href="~/style/responsive.css" rel="stylesheet" />
 <div class="product">
-<<<<<<< HEAD
     <div class="product_image"><img src="@Model.ImageUrl" alt=""></div>
     <div class="product_extra product_new"><a href="Product/Index">@Model.ShortDescription</a></div>
     <div class="product_content text-center">
         <div class="product_title"><a href="Product/Index">@Model.Name</a></div>
-=======
-    <div class="product_image">
-        <a href="Product/Index">
-            <img src="@Model.ImageUrl" alt="">
-        </a>
-    </div>
-    <div class="product_extra product_new"><a href="categories.html">@Model.ShortDescription</a></div>
-    <div class="product_content text-center">
-        <div class="product_title"><a href="product.html">@Model.Name</a></div>
->>>>>>> 97dada6cfccfd6c530a06001efe3080f7da79001
         <div class="product_price" style="color: red;">@Model.Price.ToString("c")</div>
         <button class="btn btn-success mt-3">Add to cart</button>
     </div>
