@@ -1,10 +1,12 @@
-﻿@model Phone 
-
+﻿@model Phone
+<link href="~/style/main_styles.css" rel="stylesheet" />
+<link href="~/style/responsive.css" rel="stylesheet" />
 <div class="product">
     <div class="product_image"><img src="@Model.ImageUrl" alt=""></div>
-    <div class="product_extra product_new"><a href="categories.html">@Model.ShortDescription</a></div>
-    <div class="product_content">
-        <div class="product_title"><a href="product.html">@Model.Name</a></div>
-        <div class="product_price">@Model.Price.ToString("c")</div>
+    <div class="product_extra product_new"><a href="Product/Index">@Model.ShortDescription</a></div>
+    <div class="product_content text-center">
+        <div class="product_title"><a href="Product/Index">@Model.Name</a></div>
+        <div class="product_price" style="color: red;">@Model.Price.ToString("c")</div>
+        <button class="btn btn-success mt-3">Add to cart</button>
     </div>
 </div>

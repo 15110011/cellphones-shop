@@ -66,3 +66,7 @@ C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\obj\Debug
 C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\Razor\Views\ShoppingCart\Details.g.cshtml.cs
 C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\Razor\Views\ShoppingCart\Edit.g.cshtml.cs
 C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\Razor\Views\ShoppingCart\Index.g.cshtml.cs
+C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\Razor\Views\Category\Index.g.cshtml.cs
+C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\Razor\Views\Checkout\Index.g.cshtml.cs
+C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\Razor\Views\Contact\Index.g.cshtml.cs
+C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\Razor\Views\Product\Index.g.cshtml.cs

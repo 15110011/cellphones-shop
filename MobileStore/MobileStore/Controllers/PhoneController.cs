@@ -19,7 +19,7 @@ namespace MobileStore.Controllers
         public ViewResult List()
         {
             var phones = _phoneRepository.Phones;
-            return View(phones); 
+            return View(phones);  
         }
 
 
