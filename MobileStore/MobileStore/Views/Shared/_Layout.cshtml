@@ -41,16 +41,7 @@
                                                 <li><a href="/Contact/Index">Contact</a></li>
                                             </ul>
                                         </li>
-                                        <li class="hassubs">
-                                            <a href="#">Categories</a>
-                                            <ul>
-                                                <li><a href="categories.html">Category</a></li>
-                                                <li><a href="categories.html">Category</a></li>
-                                                <li><a href="categories.html">Category</a></li>
-                                                <li><a href="categories.html">Category</a></li>
-                                                <li><a href="categories.html">Category</a></li>
-                                            </ul>
-                                        </li>
+                                        @await Component.InvokeAsync("CategoryMenu")
 
                                         <li><a href="/Contact/Index">Contact</a></li>
                                     </ul>

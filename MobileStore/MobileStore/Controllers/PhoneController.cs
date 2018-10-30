@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MobileStore.Data.Interfaces;
+using MobileStore.Data.Models;
+using MobileStore.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,10 +18,38 @@ namespace MobileStore.Controllers
             _phoneRepository = phoneRepository;
         }
 
-        public ViewResult List()
+        public ViewResult List(string category)
         {
-            var phones = _phoneRepository.Phones;
-            return View(phones); 
+            string _category = category;
+            IEnumerable<Phone> phones;
+            IEnumerable<Category> categories;
+            categories = _categoryRepository.Categories.OrderBy(c => c.CategoryName);
+            string currentCategory = string.Empty;
+
+            if (string.IsNullOrEmpty(category))
+            {
+                phones = _phoneRepository.Phones.OrderBy(p => p.PhoneId);
+                currentCategory = "All Phones";
+            }
+            else
+            {
+                if (string.Equals("Apple", _category, StringComparison.OrdinalIgnoreCase))
+                    phones = _phoneRepository.Phones.Where(p => p.Category.CategoryName.Equals("Apple")).OrderBy(p => p.Name);
+                else if (string.Equals("Oppo", _category, StringComparison.OrdinalIgnoreCase))
+                    phones = _phoneRepository.Phones.Where(p => p.Category.CategoryName.Equals("Oppo")).OrderBy(p => p.Name);
+                else if (string.Equals("Samsung", _category, StringComparison.OrdinalIgnoreCase))
+                    phones = _phoneRepository.Phones.Where(p => p.Category.CategoryName.Equals("Samsung")).OrderBy(p => p.Name);
+                else
+                    phones = _phoneRepository.Phones.Where(p => p.Category.CategoryName.Equals("Xiaomi")).OrderBy(p => p.Name);
+                currentCategory = _category;
+            }
+
+
+            return View(new PhonesListViewModel
+            {
+                Phones = phones,
+                CurrentCategory= currentCategory             
+            });
         }
 
 
