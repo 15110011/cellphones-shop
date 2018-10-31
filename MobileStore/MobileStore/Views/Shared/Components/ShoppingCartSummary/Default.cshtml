@@ -1,0 +1,16 @@
+﻿@model ShoppingCartViewModel
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Identity.EntityFrameworkCore
+
+@if (Model.ShoppingCart.ShoppingCartItems.Count > 0)
+{
+    <a asp-controller="ShoppingCart">
+        <div>Cart <span>(@Model.ShoppingCart.ShoppingCartItems.Count)</span></div>
+    </a>
+}
+else
+{
+    <div>Cart <span>(0)<span></div>
+}
+
+

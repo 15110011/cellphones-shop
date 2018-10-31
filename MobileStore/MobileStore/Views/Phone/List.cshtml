@@ -1,22 +1,23 @@
 ﻿@using MobileStore.Data.Models
 @model PhonesListViewModel
-      <div class="products">
+ 
+<div class="super_container">
+    <hr />   
+    <div class="products">
         <div class="container">
             <div class="row">
                 <div class="col">
-
                     <div class="product_grid">
-                     @{
-                        foreach(Phone phone in Model.Phones)
-                        {
-                            @Html.Partial("PhonesSummary", phone)
+                        @{
+                            foreach (Phone phone in Model.Phones)
+                            {
+                                @Html.Partial("PhonesSummary", phone)
+                            }
                         }
-                     }
-                      
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+</div>
 

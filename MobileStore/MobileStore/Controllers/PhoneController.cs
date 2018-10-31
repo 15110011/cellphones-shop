@@ -32,15 +32,8 @@ namespace MobileStore.Controllers
                 currentCategory = "All Phones";
             }
             else
-            {
-                if (string.Equals("Apple", _category, StringComparison.OrdinalIgnoreCase))
-                    phones = _phoneRepository.Phones.Where(p => p.Category.CategoryName.Equals("Apple")).OrderBy(p => p.Name);
-                else if (string.Equals("Oppo", _category, StringComparison.OrdinalIgnoreCase))
-                    phones = _phoneRepository.Phones.Where(p => p.Category.CategoryName.Equals("Oppo")).OrderBy(p => p.Name);
-                else if (string.Equals("Samsung", _category, StringComparison.OrdinalIgnoreCase))
-                    phones = _phoneRepository.Phones.Where(p => p.Category.CategoryName.Equals("Samsung")).OrderBy(p => p.Name);
-                else
-                    phones = _phoneRepository.Phones.Where(p => p.Category.CategoryName.Equals("Xiaomi")).OrderBy(p => p.Name);
+            {                
+                    phones = _phoneRepository.Phones.Where(p => p.Category.CategoryName.Equals(_category)).OrderBy(p => p.Name);
                 currentCategory = _category;
             }
 

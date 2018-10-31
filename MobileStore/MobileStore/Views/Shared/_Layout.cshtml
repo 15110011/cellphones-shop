@@ -33,11 +33,9 @@
                                     <ul>
                                         <li class="hassubs active">
                                             <a href="index.html">Home</a>
-                                            <ul>
-                                                <li><a href="/Category/Index">Categories</a></li>
-                                                <li><a href="/Product/Index">Product</a></li>
+                                            <ul>                                                
                                                 <li><a href="/ShoppingCart/Index">Cart</a></li>
-                                                <li><a href="/Checkout/Index">Check out</a></li>
+                                                <li><a href="/Order/Checkout">Check out</a></li>
                                                 <li><a href="/Contact/Index">Contact</a></li>
                                             </ul>
                                         </li>
@@ -72,9 +70,25 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 											</g>
 										</svg>
-                                            <div>Cart <span>(0)</span></div>
+                                            @await Component.InvokeAsync("ShoppingCartSummary")
                                         </a>
                                     </div>
                                     <div class="search">

@@ -7,6 +7,10 @@
                 <a asp-controller="Phone" asp-action="List"
                    asp-route-category="@category.CategoryName">@category.CategoryName</a>
             </li>
-        }      
+        }
+        <li class="dropdown-divider"></li>
+        <li>
+            <a asp-controller="Phone" asp-action="List" asp-route-category="">All Phones</a>
+        </li>
     </ul>
 </li>
