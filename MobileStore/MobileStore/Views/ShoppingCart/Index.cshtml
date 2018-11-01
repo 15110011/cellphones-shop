@@ -1,4 +1,5 @@
 @model ShoppingCartViewModel
+
 ﻿<!--Cart-->
 <link href="~/style/cart.css" rel="stylesheet" />
 <link href="~/style/cart_responsive.css" rel="stylesheet" />
@@ -17,8 +18,8 @@
                             <div class="home_content">
                                 <div class="breadcrumbs">
                                     <ul>
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="categories.html">Categories</a></li>
+                                        <li><a href="/">Home</a></li>
+                                        <li><a href="/Category/Index">Categories</a></li>
                                         <li>Shopping Cart</li>
                                     </ul>
                                 </div>
@@ -147,7 +148,7 @@
                             <ul>
                                 <li class="d-flex flex-row align-items-center justify-content-start">
                                     <div class="cart_total_title">Subtotal</div>
-                                    <div class="cart_total_value ml-auto">@Model.ShoppingCartTotal.ToString("c")<div>
+                                    <div class="cart_total_value ml-auto">@Model.ShoppingCartTotal.ToString("c")</div>
 </li>
                                 <li class="d-flex flex-row align-items-center justify-content-start">
                                     <div class="cart_total_title">Shipping</div>
@@ -166,7 +167,4 @@
         </div>
     </div>
 </div>
-<!--Cart-->
-<script src="~/js/cart.js"></script>
-
 
