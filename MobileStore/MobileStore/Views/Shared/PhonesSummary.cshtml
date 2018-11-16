@@ -7,10 +7,10 @@
     <div class="product_content text-center">
         <div class="product_title"><a href="Product/Index">@Model.Name</a></div>
         <div class="product_price" style="color: red;">@Model.Price.ToString("c")</div>
-        <p class="btn btn-success mt-3" >
+        <button class="btn btn-success mt-3" >
             <a asp-controller="ShoppingCart"
                asp-action="AddToShoppingCart"
-               asp-route-phoneId="@Model.PhoneId">Add to cart</a>            
-        </p>
+               asp-route-phoneId="@Model.PhoneId" style="color: white">Add to cart</a>            
+        </button>
     </div>
 </div>
