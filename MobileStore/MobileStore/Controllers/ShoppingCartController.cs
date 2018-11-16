@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -12,8 +12,7 @@ using MobileStore.ViewModels;
 namespace MobileStore.Controllers
 {
     public class ShoppingCartController : Controller
-
-    {       
+    {
         private readonly IPhoneRepository _phoneRepository;
         private readonly ShoppingCart _shoppingCart;
 
@@ -22,20 +21,20 @@ namespace MobileStore.Controllers
             _phoneRepository = phoneRepository;
             _shoppingCart = shoppingCart;
         }
-        // GET: /<controller>/
+              
         public ViewResult Index()
         {
             var items = _shoppingCart.GetShoppingCartItems();
             _shoppingCart.ShoppingCartItems = items;
 
-            var sCVM = new ShoppingCartViewModel
+            var shoppingCartViewModel = new ShoppingCartViewModel
             {
                 ShoppingCart = _shoppingCart,
                 ShoppingCartTotal = _shoppingCart.GetShoppingCartTotal()
             };
-
-            return View(sCVM);
+            return View(shoppingCartViewModel);
         }
+        
         public RedirectToActionResult AddToShoppingCart(int phoneId)
         {
             var selectedPhone = _phoneRepository.Phones.FirstOrDefault(p => p.PhoneId == phoneId);
@@ -55,5 +54,6 @@ namespace MobileStore.Controllers
             }
             return RedirectToAction("Index");
         }
-    }      
+
+    }
 }

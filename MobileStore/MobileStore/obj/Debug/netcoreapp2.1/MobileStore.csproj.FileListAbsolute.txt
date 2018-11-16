@@ -60,7 +60,6 @@ C:\Users\Twisted\Desktop\cellphones-shop\MobileStore\MobileStore\obj\Debug\netco
 C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\Razor\Views\Phone\List.g.cshtml.cs
 C:\Users\Twisted\Desktop\cellphones-shop\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\Razor\Views\Phone\List.g.cshtml.cs
 C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\PhonesSummary.g.cshtml.cs
-C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\Razor\Views\ShoppingCart\Index.g.cshtml.cs
 C:\Users\Twisted\Desktop\MobileStore\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\MobileStore.csprojAssemblyReference.cache
 C:\Users\Twisted\Desktop\MobileStore\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\MobileStore.csproj.CoreCompileInputs.cache
 C:\Users\Twisted\Desktop\MobileStore\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\MobileStore.RazorAssemblyInfo.cache
@@ -109,3 +108,5 @@ C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\obj\Debug
 C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\CategoryMenu\Default.g.cshtml.cs
 C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\ShoppingCartSummary\Default.g.cshtml.cs
 C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\Razor\Views\SiteAdmin\Index.g.cshtml.cs
+C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\Razor\Views\ShoppingCart\Index.g.cshtml.cs
+C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\MobileStore.csprojAssemblyReference.cache

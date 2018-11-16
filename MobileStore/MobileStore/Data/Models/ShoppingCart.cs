@@ -15,17 +15,21 @@ namespace MobileStore.Data.Models
         {
             _mobileStoreDbContext = mobileStoreDbContext;
         }
+         
         public string ShoppingCartId { get; set; }
+
         public List<ShoppingCartItem> ShoppingCartItems { get; set; }
 
-        public static ShoppingCart GetCart(IServiceProvider services)
+        public static ShoppingCart GetCart(IServiceProvider services)        
         {
-            ISession session = services.GetRequiredService<IHttpContextAccessor>()?.HttpContext.Session;
+            ISession session = services.GetRequiredService<IHttpContextAccessor>()?
+                .HttpContext.Session;
 
             var context = services.GetService<MobileStoreDbContext>();
             string cartId = session.GetString("CartId") ?? Guid.NewGuid().ToString();
 
             session.SetString("CartId", cartId);
+
             return new ShoppingCart(context) { ShoppingCartId = cartId };
         }
 

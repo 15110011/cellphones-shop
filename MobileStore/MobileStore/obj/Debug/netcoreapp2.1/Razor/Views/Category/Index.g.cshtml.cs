@@ -62,7 +62,7 @@ using MobileStore.ViewModels;
             WriteLiteral("    <!--Categories-->\r\n");
             EndContext();
             BeginContext(23, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "3d11deccbdbc4f01b57f415fc7fb346e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "156cb6c0e8d2448fa2f67bfdb55aa5b4", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -82,7 +82,7 @@ using MobileStore.ViewModels;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(94, 80, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "607f3a403c384d66b4d45000b1cd7791", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "d15aa09bbcc041e0a686ef6b72b2c767", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -361,7 +361,7 @@ using MobileStore.ViewModels;
                             ");
             EndContext();
             BeginContext(12903, 307, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bd37a938e8a2405ab1e6dd9b9e0f37b2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c904760c1da444068212b60ec0af7c4c", async() => {
                 BeginContext(12965, 238, true);
                 WriteLiteral("\r\n                                <input type=\"email\" class=\"newsletter_input\" required=\"required\">\r\n                                <button class=\"newsletter_button trans_200\"><span>Subscribe</span></button>\r\n                            ");
                 EndContext();

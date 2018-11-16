@@ -56,7 +56,7 @@ using MobileStore.ViewModels;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             BeginContext(14, 56, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "f546415d5a8646899005917f1cba9b93", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "a8120ff682fa4877904f618fa05363cf", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -75,7 +75,7 @@ using MobileStore.ViewModels;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(72, 55, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "85f60c02ffac4f5a99c5b0334e219bbb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "9fd06501d4de48a69b05c53e4ba22309", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -134,7 +134,7 @@ WriteAttributeValue("", 193, Model.ImageUrl, 193, 15, false);
             WriteLiteral("</div>\r\n        <p class=\"btn btn-success mt-3\" >\r\n            ");
             EndContext();
             BeginContext(600, 146, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9e070fb58f534174a9361cbd1c8b1c93", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6cf8d7d9a5374fe6b783b6478f4b7ae7", async() => {
                 BeginContext(731, 11, true);
                 WriteLiteral("Add to cart");
                 EndContext();

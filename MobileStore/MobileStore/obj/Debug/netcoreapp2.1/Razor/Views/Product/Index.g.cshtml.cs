@@ -62,7 +62,7 @@ using MobileStore.ViewModels;
             WriteLiteral(" <!--Product-->\r\n");
             EndContext();
             BeginContext(17, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "9bc29adabd8646239a0ab45ef1ad0927", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "23ec80df464b4a7eb7f98daf53d4e425", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -82,7 +82,7 @@ using MobileStore.ViewModels;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(85, 77, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "0d8616ec4944497ea07f974731b9dace", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "d26e70bb6ce345dcb2c4ed0d150cc2b7", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -281,7 +281,7 @@ using MobileStore.ViewModels;
             WriteLiteral("tie eros</p></div>\r\n                        <div class=\"newsletter_form_container\">\r\n                            ");
             EndContext();
             BeginContext(9491, 307, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0ac9057b1b1846cfb85f77b0380ec0d1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9578725e4d7240afa6d246127e425e21", async() => {
                 BeginContext(9553, 238, true);
                 WriteLiteral("\r\n                                <input type=\"email\" class=\"newsletter_input\" required=\"required\">\r\n                                <button class=\"newsletter_button trans_200\"><span>Subscribe</span></button>\r\n                            ");
                 EndContext();

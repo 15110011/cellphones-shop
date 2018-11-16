@@ -62,7 +62,7 @@ using MobileStore.ViewModels;
             WriteLiteral(" <!--Contact-->\r\n");
             EndContext();
             BeginContext(17, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "7fa16d11830f42b69eaaebc5a9f0c439", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "c1e98cebb2bb46bf9dea1bfd1442442e", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -82,7 +82,7 @@ using MobileStore.ViewModels;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(85, 77, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "4027c26f5b6e48178047b0f498cdd5bb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "efb033ca921a4ba49ce8632e69b1a6ba", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -142,7 +142,7 @@ using MobileStore.ViewModels;
                             ");
             EndContext();
             BeginContext(1581, 1670, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "36d69d3e251c417aaef4d21ce18f8e51", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1f43fcc498764006a69c5d0b9eb64d31", async() => {
                 BeginContext(1637, 1607, true);
                 WriteLiteral(@"
                                 <div class=""row"">

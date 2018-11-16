@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿ using Microsoft.AspNetCore.Mvc;
 using MobileStore.Data.Models;
 using MobileStore.ViewModels;
 using System;

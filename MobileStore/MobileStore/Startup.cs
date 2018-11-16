@@ -39,16 +39,18 @@ namespace MobileStore
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
+                      
+            services.AddDbContext<MobileStoreDbContext>(options =>
+                options.UseSqlServer(_configurationRoot.GetConnectionString("DefaultConnection")));
 
             services.AddTransient<IPhoneRepository, PhoneRepository>();
             services.AddTransient<ICategoryRepository, CategoryRepository>();
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-
-            services.AddDbContext<MobileStoreDbContext>(options =>
-            options.UseSqlServer(_configurationRoot.GetConnectionString("DefaultConnection")));
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddScoped(sp => ShoppingCart.GetCart(sp));
+
+            services.AddTransient<IOrderRepository, OrderRepository>();
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddMemoryCache();
             services.AddSession();
         }
@@ -59,6 +61,7 @@ namespace MobileStore
             app.UseDeveloperExceptionPage();
             app.UseStatusCodePages();
             app.UseSession();
+            app.UseMvcWithDefaultRoute();
             //app.UseIdentity();
 
             if (env.IsDevelopment())
