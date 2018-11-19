@@ -8,7 +8,7 @@ namespace MobileStore.Controllers
 {
     public class ContactController : Controller
     {
-        public IActionResult Index()
+        public ViewResult Index()
         {
             return View();
         }

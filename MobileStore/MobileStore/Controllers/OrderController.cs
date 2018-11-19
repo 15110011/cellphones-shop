@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MobileStore.Data.Interfaces;
 using MobileStore.Data.Models;
+using MobileStore.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,8 @@ namespace MobileStore.Controllers
     public class OrderController:Controller
     {
         private readonly IOrderRepository _orderRepository;
-        private readonly ShoppingCart _shoppingCart;
+        private readonly ShoppingCart _shoppingCart;      
+        private readonly Order _order;
 
         public OrderController(IOrderRepository orderRepository, ShoppingCart shoppingCart)
         {
@@ -21,7 +23,17 @@ namespace MobileStore.Controllers
 
         public IActionResult Checkout()
         {
-            return View();
-        }
+            var items = _shoppingCart.GetShoppingCartItems();
+            _shoppingCart.ShoppingCartItems = items;
+
+            var checkoutCartViewModel = new CheckoutViewModel
+            {
+                Order = _order,
+                ShoppingCart = _shoppingCart,
+                ShoppingCartTotal = _shoppingCart.GetShoppingCartTotal()
+            };
+            return View(checkoutCartViewModel);
+        }       
+    
     }
 }

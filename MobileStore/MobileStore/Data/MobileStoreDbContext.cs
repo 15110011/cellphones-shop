@@ -16,6 +16,6 @@ namespace MobileStore
         public DbSet<ShoppingCartItem> ShoppingCartItems { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
-        public DbSet<MobileStore.Data.Models.ShoppingCart> ShoppingCart { get; set; }
+        public DbSet<ShoppingCart> ShoppingCart { get; set; }
     }
 }
