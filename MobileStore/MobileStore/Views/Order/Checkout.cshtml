@@ -47,11 +47,13 @@
                                         <!-- Last Name -->
                                         <label asp-for="Order.AddressLine1">Last Name*</label>
                                         <input type="text" asp-for="Order.LastName" id="checkout_last_name" class="checkout_input" required="required">
+                                        <span asp-validation-for="Order.LastName" class="text-danger"></span>
                                     </div>
                                     <div class="col-xl-6">
                                         <!-- Name -->
                                         <label asp-for="Order.FirstName">First Name*</label>
                                         <input type="text" asp-for="Order.FirstName" id="checkout_name" class="checkout_input" required="required">
+                                        <span asp-validation-for="Order.FirstName" class="text-danger"></span>
                                     </div>
 
                                 </div>
@@ -59,15 +61,18 @@
                                     <!-- Address -->
                                     <label asp-for="Order.AddressLine1">Address 1*</label>
                                     <input asp-for="Order.AddressLine1" type="text" id="checkout_address" class="checkout_input" required="required">
+                                    <span asp-validation-for="Order.AddressLine1" class="text-danger"></span>
                                 </div>
                                 <div>
                                     <label asp-for="Order.AddressLine2">Address 2*</label>
                                     <input asp-for="Order.AddressLine2" type="text" id="checkout_address_2" class="checkout_input" required="required">
+                                    <span asp-validation-for="Order.AddressLine2" class="text-danger"></span>
                                 </div>                               
                                 <div>
                                     <!-- State -->
                                     <label asp-for="Order.State">State</label>
                                     <input asp-for="Order.State" type="text" id="checkout_company" class="checkout_input">
+                                    <span asp-validation-for="Order.State" class="text-danger"></span>
                                 </div>
                                 <div>
                                     <!-- Country -->
@@ -78,25 +83,32 @@
                                         <option>US</option>
                                         <option>UK</option>
                                         <option>China</option>
-                                    </select>
+                                    </select>                                    
                                 </div>
 
                                 <div>
-                                     <!-- Zipcode -->
+                                    <!-- Zipcode -->
                                     <label asp-for="Order.ZipCode">Zipcode*</label>
-                                    <input type="text" id="checkout_zipcode" class="checkout_input" required="required">
+                                    <input asp-for="Order.ZipCode" type="text" id="checkout_zipcode" class="checkout_input" required="required">
+                                    <span asp-validation-for="Order.ZipCode" class="text-danger"></span>
                                 </div>
                                                         
                                 <div>
                                     <!-- Phone no -->
                                     <label asp-for="Order.PhoneNumber">Phone no*</label>
                                     <input asp-for="Order.PhoneNumber" type="phone" id="checkout_phone" class="checkout_input" required="required">
+                                    <span asp-validation-for="Order.PhoneNumber" class="text-danger"></span>
                                 </div>
                                 <div>
                                     <!-- Email -->
                                     <label asp-for="Order.Email">Email Address*</label>
                                     <input asp-for="Order.Email" type="email" id="checkout_email" class="checkout_input" required="required">
-                                </div>                          
+                                    <span asp-validation-for="Order.Email" class="text-danger"></span>
+                                </div>  
+                                <div class="form-group">
+                                    <input class="button order_button" type="submit" value="Place Order"/>                                    
+                                    @*<input class="btn btn-success"  />*@
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -116,7 +128,7 @@
                                 <div class="order_list_value ml-auto">Total</div>
                             </div>
                             <ul class="order_list">
-                                @foreach (var line in Model.ShoppingCart.ShoppingCartItems)
+                                @foreach(var line in Model.ShoppingCart.ShoppingCartItems)
                                 {
                                     <li class="d-flex flex-row align-items-center justify-content-start">
                                         <div class="order_list_title">@line.Phone.Name</div>
@@ -165,7 +177,7 @@
                         </div>
 
                         <!-- Order Text -->                        
-                        <div class="button order_button" ><a href="#">Place Order</a></div>
+                        
                     </div>
                 </div>
             </div>
