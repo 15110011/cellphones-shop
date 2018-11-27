@@ -1,0 +1,294 @@
+﻿@model IEnumerable<MobileStore.Data.Models.Phone>
+
+
+@{
+    Layout = null;
+}
+
+@{
+    ViewData["Title"] = "Manage";
+}
+
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="utf-8" />
+    <title>Site Admin</title>
+    <meta name="description" content="app, web app, responsive, responsive layout, admin, admin panel, admin dashboard, flat, flat ui, ui kit, AngularJS, ui route, charts, widgets, components" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <link href="~/style/animate.css" rel="stylesheet" />
+    <link href="~/style/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/style/simple-line-icons.css" rel="stylesheet" />
+    <link href="~/style/bootstrap.css" rel="stylesheet" />
+    <link href="~/style/font.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="~/style/app.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="app app-header-fixed ">
+        <!-- header -->
+        <header id="header" class="app-header navbar" style="width: auto;" role="menu">
+            <!-- navbar header -->
+            <div class="navbar-header bg-dark">
+                <button class="pull-right visible-xs dk" ui-toggle-class="show" target=".navbar-collapse">
+                    <i class="glyphicon glyphicon-cog"></i>
+                </button>
+                <button class="pull-right visible-xs" ui-toggle-class="off-screen" target=".app-aside" ui-scroll="app">
+                    <i class="glyphicon glyphicon-align-justify"></i>
+                </button>
+                <!-- brand -->
+                <a href="#/" class="navbar-brand text-lt">
+                    <i class="fab fa-codepen"></i>
+                    <img src="img/logo.png" alt="." class="hide">
+                    <span class="hidden-folded m-l-xs">Admin</span>
+                </a>
+                <!-- / brand -->
+            </div>
+        </header>
+        <!-- / header -->
+        <!-- aside -->
+        <aside id="aside" class="app-aside hidden-xs bg-dark">
+            <div class="aside-wrap">
+                <div class="navi-wrap">
+                    <!-- user -->
+                    <div class="clearfix hidden-xs text-center hide" id="aside-user">
+                        <div class="dropdown wrapper">
+                            <a href="app.page.profile">
+                                <span class="thumb-lg w-auto-folded avatar m-t-sm">
+                                    <img src="img/a0.jpg" class="img-full" alt="...">
+                                </span>
+                            </a>
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle hidden-folded">
+                                <span class="clear">
+                                    <span class="block m-t-sm">
+                                        <strong class="font-bold text-lt">John.Smith</strong>
+                                        <b class="caret"></b>
+                                    </span>
+                                    <span class="text-muted text-xs block">Art Director</span>
+                                </span>
+                            </a>
+                            <!-- dropdown -->
+                            <ul class="dropdown-menu animated fadeInRight w hidden-folded">
+                                <li class="wrapper b-b m-b-sm bg-info m-t-n-xs">
+                                    <span class="arrow top hidden-folded arrow-info"></span>
+                                    <div>
+                                        <p>300mb of 500mb used</p>
+                                    </div>
+                                    <div class="progress progress-xs m-b-none dker">
+                                        <div class="progress-bar bg-white" data-toggle="tooltip" data-original-title="50%" style="width: 50%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href>Settings</a>
+                                </li>
+                                <li>
+                                    <a href="page_profile.html">Profile</a>
+                                </li>
+                                <li>
+                                    <a href>
+                                        <span class="badge bg-danger pull-right">3</span>
+                                        Notifications
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="page_signin.html">Logout</a>
+                                </li>
+                            </ul>
+                            <!-- / dropdown -->
+                        </div>
+                        <div class="line dk hidden-folded"></div>
+                    </div>
+                    <!-- / user -->
+                    <!-- nav -->
+                    <nav ui-nav class="navi clearfix">
+                        <ul class="nav">
+                            <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+                                <span>Navigation</span>
+                            </li>
+                            <li>
+                                <a href="/Admin" class="auto">
+                                    <i class="glyphicon glyphicon-stats icon text-primary-dker"></i>
+                                    <span class="font-bold">Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="line dk" style="background-color: white"></li>
+
+                            <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+                                <span>Management</span>
+                            </li>
+                            @*<li>
+                                    <a href class="auto">
+                                        <span class="pull-right text-muted">
+                                            <i class="fa fa-fw fa-angle-right text"></i>
+                                            <i class="fa fa-fw fa-angle-down text-active"></i>
+                                        </span>
+                                        <b class="badge bg-info pull-right">3</b>
+                                        <i class="glyphicon glyphicon-th"></i>
+                                        <span>Layout</span>
+                                    </a>
+                                    <ul class="nav nav-sub dk">
+                                        <li class="nav-sub-header">
+                                            <a href>
+                                                <span>Layout</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="layout_app.html">
+                                                <span>Application</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="layout_fullwidth.html">
+                                                <span>Full width</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="layout_boxed.html">
+                                                <span>Boxed layout</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>*@
+                            <li>
+                                <a href="/Admin/Categories">
+                                    <i class="fas fa-shopping-basket"></i>
+                                    <span>Category</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/Admin/Phones">
+                                    <i class="fas fa-boxes"></i>
+                                    <span>Products</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- nav -->
+                    <!-- aside footer -->
+                </div>
+            </div>
+        </aside>
+        <!-- / aside -->
+        <!-- content -->
+        <div id="content" class="app-content" role="main">
+            <div class="app-content-body" style="margin-top: -50px;">
+                <div class="hbox hbox-auto-xs hbox-auto-sm" ng-init="
+    app.settings.asideFolded = false;
+    app.settings.asideDock = false;
+  ">
+                    <!-- main -->
+                    <div class="col">
+                        <!-- main header -->
+                        <div class="bg-light lter b-b wrapper-md">
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-12">
+                                    <h1 class="m-n font-thin h3 text-black">Dashboard</h1>
+                                    <small class="text-muted">Welcome to angulr application</small>
+                                </div>
+                                <div class="col-sm-6 text-right hidden-xs">
+                                    <a href="/" class="btn btn-success">Go to main site</a>
+                                    <button class="btn btn-primary">Logout</button>
+                                </div>
+                            </div>
+                            <button class="btn btn-success" style="margin-top: 25px; margin-bottom: 15px;">
+                                <a href="/Admin/Phones/Create">Create New</a>
+                            </button>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Name)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.ShortDescription)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Price)
+                                        </th>
+                                        <th>
+                                        </th>
+                                        <th>
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.IsPreferredPhone)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Category)
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Name)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.ShortDescription)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Price)
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.IsPreferredPhone)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Category.CategoryId)
+                                            </td>
+                                            <td>
+                                                <a class="btn btn-primary" href="/Admin/Phones/Edit/@item.PhoneId">Edit</a> |
+                                                <a type="button" class="btn btn-success" asp-action="Details" asp-route-id="@item.PhoneId">Details</a> |
+                                                @*<a asp-action="Edit" asp-route-id="@item.PhoneId" asp-action="Delete" asp-route-id="@item.PhoneId">Delete</a>*@
+                                                <!-- Button trigger modal -->
+                                                <a asp-action="Delete" asp-route-id="@item.PhoneId" type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+                                                    Delete
+                                                </a>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/js/jquery.js"></script>
+    <script src="~/js/bootstrap.js"></script>
+    <script src="~/js/ui-load.js"></script>
+    <script src="~/js/ui-jp.config.js"></script>
+    <script src="~/js/ui-jp.js"></script>
+    <script src="~/js/ui-nav.js"></script>
+    <script src="~/js/ui-toggle.js"></script>
+    <script src="~/js/ui-client.js"></script>
+</body>
+</html>
+

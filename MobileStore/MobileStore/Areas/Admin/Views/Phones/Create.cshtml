@@ -1,0 +1,275 @@
+﻿@model MobileStore.Data.Models.Phone
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="utf-8" />
+    <title>Site Admin</title>
+    <meta name="description" content="app, web app, responsive, responsive layout, admin, admin panel, admin dashboard, flat, flat ui, ui kit, AngularJS, ui route, charts, widgets, components" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <link href="~/style/animate.css" rel="stylesheet" />
+    <link href="~/style/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/style/simple-line-icons.css" rel="stylesheet" />
+    <link href="~/style/bootstrap.css" rel="stylesheet" />
+    <link href="~/style/font.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="~/style/app.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="app app-header-fixed ">
+        <!-- header -->
+        <header id="header" class="app-header navbar" style="width: auto;" role="menu">
+            <!-- navbar header -->
+            <div class="navbar-header bg-dark">
+                <button class="pull-right visible-xs dk" ui-toggle-class="show" target=".navbar-collapse">
+                    <i class="glyphicon glyphicon-cog"></i>
+                </button>
+                <button class="pull-right visible-xs" ui-toggle-class="off-screen" target=".app-aside" ui-scroll="app">
+                    <i class="glyphicon glyphicon-align-justify"></i>
+                </button>
+                <!-- brand -->
+                <a href="#/" class="navbar-brand text-lt">
+                    <i class="fab fa-codepen"></i>
+                    <img src="img/logo.png" alt="." class="hide">
+                    <span class="hidden-folded m-l-xs">Admin</span>
+                </a>
+                <!-- / brand -->
+            </div>
+        </header>
+        <!-- / header -->
+        <!-- aside -->
+        <aside id="aside" class="app-aside hidden-xs bg-dark">
+            <div class="aside-wrap">
+                <div class="navi-wrap">
+                    <!-- user -->
+                    <div class="clearfix hidden-xs text-center hide" id="aside-user">
+                        <div class="dropdown wrapper">
+                            <a href="app.page.profile">
+                                <span class="thumb-lg w-auto-folded avatar m-t-sm">
+                                    <img src="img/a0.jpg" class="img-full" alt="...">
+                                </span>
+                            </a>
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle hidden-folded">
+                                <span class="clear">
+                                    <span class="block m-t-sm">
+                                        <strong class="font-bold text-lt">John.Smith</strong>
+                                        <b class="caret"></b>
+                                    </span>
+                                    <span class="text-muted text-xs block">Art Director</span>
+                                </span>
+                            </a>
+                            <!-- dropdown -->
+                            <ul class="dropdown-menu animated fadeInRight w hidden-folded">
+                                <li class="wrapper b-b m-b-sm bg-info m-t-n-xs">
+                                    <span class="arrow top hidden-folded arrow-info"></span>
+                                    <div>
+                                        <p>300mb of 500mb used</p>
+                                    </div>
+                                    <div class="progress progress-xs m-b-none dker">
+                                        <div class="progress-bar bg-white" data-toggle="tooltip" data-original-title="50%" style="width: 50%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href>Settings</a>
+                                </li>
+                                <li>
+                                    <a href="page_profile.html">Profile</a>
+                                </li>
+                                <li>
+                                    <a href>
+                                        <span class="badge bg-danger pull-right">3</span>
+                                        Notifications
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="page_signin.html">Logout</a>
+                                </li>
+                            </ul>
+                            <!-- / dropdown -->
+                        </div>
+                        <div class="line dk hidden-folded"></div>
+                    </div>
+                    <!-- / user -->
+                    <!-- nav -->
+                    <nav ui-nav class="navi clearfix">
+                        <ul class="nav">
+                            <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+                                <span>Navigation</span>
+                            </li>
+                            <li>
+                                <a href class="auto">
+                                    <i class="glyphicon glyphicon-stats icon text-primary-dker"></i>
+                                    <span class="font-bold">Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="line dk" style="background-color: white"></li>
+
+                            <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+                                <span>Management</span>
+                            </li>
+                            @*<li>
+                                    <a href class="auto">
+                                        <span class="pull-right text-muted">
+                                            <i class="fa fa-fw fa-angle-right text"></i>
+                                            <i class="fa fa-fw fa-angle-down text-active"></i>
+                                        </span>
+                                        <b class="badge bg-info pull-right">3</b>
+                                        <i class="glyphicon glyphicon-th"></i>
+                                        <span>Layout</span>
+                                    </a>
+                                    <ul class="nav nav-sub dk">
+                                        <li class="nav-sub-header">
+                                            <a href>
+                                                <span>Layout</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="layout_app.html">
+                                                <span>Application</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="layout_fullwidth.html">
+                                                <span>Full width</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="layout_boxed.html">
+                                                <span>Boxed layout</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>*@
+                            <li>
+                                <a href="/">
+                                    <i class="fas fa-shopping-basket"></i>
+                                    <span>Category</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/SiteAdmin/Manage">
+                                    <i class="fas fa-boxes"></i>
+                                    <span>Products</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- nav -->
+                    <!-- aside footer -->
+                </div>
+            </div>
+        </aside>
+        <!-- / aside -->
+        <!-- content -->
+        <div id="content" class="app-content" role="main">
+            <div class="app-content-body" style="margin-top: -50px;">
+                <div class="hbox hbox-auto-xs hbox-auto-sm" ng-init="
+    app.settings.asideFolded = false;
+    app.settings.asideDock = false;
+  ">
+                    <!-- main -->
+                    <div class="col">
+                        <!-- main header -->
+                        <div class="bg-light lter b-b wrapper-md">
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-12">
+                                    <h1 class="m-n font-thin h3 text-black">Dashboard</h1>
+                                    <small class="text-muted">Welcome to angulr application</small>
+                                </div>
+                                <div class="col-sm-6 text-right hidden-xs">
+                                    <a href="/" class="btn btn-success">Go to main site</a>
+                                    <button class="btn btn-primary">Logout</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-6">
+                                    <form asp-action="Create">
+                                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                        <div class="form-group">
+                                            <label asp-for="Name" class="control-label"></label>
+                                            <input asp-for="Name" class="form-control" />
+                                            <span asp-validation-for="Name" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label asp-for="ShortDescription" class="control-label"></label>
+                                            <input asp-for="ShortDescription" class="form-control" />
+                                            <span asp-validation-for="ShortDescription" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label asp-for="Price" class="control-label"></label>
+                                            <input asp-for="Price" class="form-control" />
+                                            <span asp-validation-for="Price" class="text-danger"></span>
+                                        </div>
+                                        @*<div class="form-group">
+                                            <label asp-for="ImageUrl" class="control-label"></label>
+                                            <input asp-for="ImageUrl" class="form-control" />
+                                            <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label asp-for="ImageThumbnailUrl" class="control-label"></label>
+                                            <input asp-for="ImageThumbnailUrl" class="form-control" />
+                                            <span asp-validation-for="ImageThumbnailUrl" class="text-danger"></span>
+                                        </div>*@
+                                        <div class="form-group">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input asp-for="IsPreferredPhone" /> @Html.DisplayNameFor(model => model.IsPreferredPhone)
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label asp-for="CategoryId" class="control-label"></label>
+                                            <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="submit" value="Create" class="btn btn-success" />
+                                            <button class="btn btn-danger" style="display: inline">
+                                                <a asp-action="Manage">Back to List</a>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-3">
+                                    <form asp-controller="SiteAdmin" asp-action="Create" method="post"
+
+                                          enctype="multipart/form-data">
+
+ 
+
+                                        <input type="file" name="file" />
+
+                                        <button type="submit">Upload Image</button>
+
+                                    </form>
+                                </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/js/jquery.js"></script>
+    <script src="~/js/bootstrap.js"></script>
+    <script src="~/js/ui-load.js"></script>
+    <script src="~/js/ui-jp.config.js"></script>
+    <script src="~/js/ui-jp.js"></script>
+    <script src="~/js/ui-nav.js"></script>
+    <script src="~/js/ui-toggle.js"></script>
+    <script src="~/js/ui-client.js"></script>
+</body>
+</html>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
