@@ -81,15 +81,15 @@ namespace MobileStore
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
+                    name: "areaRoute",
+                    template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+                routes.MapRoute(
                     name:"categoryFilter",
                     template:"Phone/{Action}/{category?}",
                     defaults:new { Controller="Phone", action="List" });
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
-                routes.MapRoute(
-                    name: "Admin_default",
-                    template: "{area=Admin}/{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

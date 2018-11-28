@@ -105,7 +105,7 @@
                                 <span>Navigation</span>
                             </li>
                             <li>
-                                <a href class="auto">
+                                <a href="/Admin" class="auto">
                                     <i class="glyphicon glyphicon-stats icon text-primary-dker"></i>
                                     <span class="font-bold">Dashboard</span>
                                 </a>
@@ -149,13 +149,13 @@
                                     </ul>
                                 </li>*@
                             <li>
-                                <a href="/">
+                                <a href="/Admin/Categories">
                                     <i class="fas fa-shopping-basket"></i>
                                     <span>Category</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/SiteAdmin/Manage">
+                                <a href="/Admin/Phones">
                                     <i class="fas fa-boxes"></i>
                                     <span>Products</span>
                                 </a>
@@ -233,23 +233,12 @@
                                         <div class="form-group">
                                             <input type="submit" value="Create" class="btn btn-success" />
                                             <button class="btn btn-danger" style="display: inline">
-                                                <a asp-action="Manage">Back to List</a>
+                                                <a asp-action="Index">Back to List</a>
                                             </button>
                                         </div>
                                     </form>
                                 </div>
                                 <div class="col-md-3">
-                                    <form asp-controller="SiteAdmin" asp-action="Create" method="post"
-
-                                          enctype="multipart/form-data">
-
- 
-
-                                        <input type="file" name="file" />
-
-                                        <button type="submit">Upload Image</button>
-
-                                    </form>
                                 </div>
                                 </div>
                             </div>
