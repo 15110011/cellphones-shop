@@ -45,6 +45,16 @@ namespace MobileStore.Controllers
             });
         }
 
+        public ViewResult Details(int phoneId)
+        {
+            var phone = _phoneRepository.Phones.FirstOrDefault(d => d.PhoneId == phoneId);
+            if (phone == null)
+            {
+                return View("~/Views/Error/Error.cshtml");
+            }
+            return View(phone);
+        }
+
 
     }
     

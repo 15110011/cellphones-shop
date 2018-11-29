@@ -5,7 +5,7 @@
     <div class="product_image"><img src="@Model.ImageUrl" alt=""></div>
     <div class="product_extra product_new"><a href="Product/Index">@Model.ShortDescription</a></div>
     <div class="product_content text-center">
-        <div class="product_title"><a href="Product/Index">@Model.Name</a></div>
+        <div class="product_title"><a asp-controller="Phone" asp-action="Details" asp-route-phoneId="@Model.PhoneId">@Model.Name</a></div>
         <div class="product_price" style="color: red;">@Model.Price.ToString("c")</div>
         <button class="btn btn-success mt-3">
             <a style="color: white" asp-controller="ShoppingCart"

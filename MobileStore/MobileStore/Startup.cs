@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -43,6 +44,9 @@ namespace MobileStore
             services.AddDbContext<MobileStoreDbContext>(options =>
                 options.UseSqlServer(_configurationRoot.GetConnectionString("DefaultConnection")));
 
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<MobileStoreDbContext>();
+
             services.AddTransient<IPhoneRepository, PhoneRepository>();
             services.AddTransient<ICategoryRepository, CategoryRepository>();
 
@@ -62,7 +66,7 @@ namespace MobileStore
             app.UseStatusCodePages();
             app.UseSession();
             app.UseMvcWithDefaultRoute();
-            //app.UseIdentity();
+            app.UseIdentity();
 
             if (env.IsDevelopment())
             {

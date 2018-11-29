@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MobileStore;
 
 namespace MobileStore.Migrations
 {
     [DbContext(typeof(MobileStoreDbContext))]
-    partial class MobileStoreDbContextModelSnapshot : ModelSnapshot
+    [Migration("20181127131750_Identity")]
+    partial class Identity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -272,19 +274,11 @@ namespace MobileStore.Migrations
 
                     b.Property<int>("CategoryId");
 
-                    b.Property<string>("ImageDetail1");
-
-                    b.Property<string>("ImageDetail2");
-
-                    b.Property<string>("ImageDetail3");
-
                     b.Property<string>("ImageThumbnailUrl");
 
                     b.Property<string>("ImageUrl");
 
                     b.Property<bool>("IsPreferredPhone");
-
-                    b.Property<string>("LongDescription");
 
                     b.Property<string>("Name");
 

@@ -1,11 +1,13 @@
 ﻿using System;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using MobileStore.Data.Models;
 
-namespace MobileStore
+namespace MobileStore 
 {
-    public partial class MobileStoreDbContext : DbContext
+    public partial class MobileStoreDbContext : IdentityDbContext<IdentityUser>
     {
         public MobileStoreDbContext(DbContextOptions<MobileStoreDbContext> options) : base(options)
         {

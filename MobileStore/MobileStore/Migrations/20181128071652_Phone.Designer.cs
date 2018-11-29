@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MobileStore;
 
 namespace MobileStore.Migrations
 {
     [DbContext(typeof(MobileStoreDbContext))]
-    partial class MobileStoreDbContextModelSnapshot : ModelSnapshot
+    [Migration("20181128071652_Phone")]
+    partial class Phone
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
