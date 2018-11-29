@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace MobileStore.Controllers
-{
-    public class SiteAdminController : Controller
+namespace MobileStore.Areas.Admin.Controllers
+{[Area("Admin")]
+    public class HomeController : Controller
     {
         public IActionResult Index()
         {
