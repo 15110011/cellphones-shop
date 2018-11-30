@@ -39,3 +39,22 @@
     top: 20%;
     left: 33%;
 }
+
+.login a {
+    color: black;
+}
+
+.login a:hover {
+    color: #e95a5a;
+}
+
+.home a {
+   font-size: 28px; 
+    font-weight: 600; 
+    color: black; 
+    text-decoration: none;
+}
+
+.home a:hover {
+    color: beige;
+}

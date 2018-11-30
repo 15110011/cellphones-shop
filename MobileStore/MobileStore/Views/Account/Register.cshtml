@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -19,7 +22,10 @@
 </head>
 
 <body>
-    <div class="container-fluid admin-site">
+    <div class="container-fluid admin-site" style="min-height: 100vh;">
+        <div class="home">
+            <a href="/">Home</a>
+        </div>
         <div class="row pt-5">
             <div class="col-md-4"></div>
             <div class="col-md-4 login-form">
@@ -38,6 +44,7 @@
                         <label for="exampleInputPassword2">Confirm password</label>
                         <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Confirm password">
                     </div>
+                    <span class="ml-3 pt-2" style="float: right">or <a href="/Account/Login">Sign in</a></span>
                     <button type="submit" class="btn btn-primary" style="float: right">Register</button>
                 </form>
             </div>
