@@ -2,7 +2,9 @@
 <link href="~/style/main_styles.css" rel="stylesheet" />
 <link href="~/style/responsive.css" rel="stylesheet" />
 <div class="product">
-    <div class="product_image"><img src="@Model.ImageUrl" alt=""></div>
+    <a asp-controller="Phone" asp-action="Details" asp-route-phoneId="@Model.PhoneId">
+        <div class="product_image"><img src="@Model.ImageUrl" alt=""></div>
+    </a>
     <div class="product_extra product_new"><a href="Product/Index">@Model.ShortDescription</a></div>
     <div class="product_content text-center">
         <div class="product_title"><a asp-controller="Phone" asp-action="Details" asp-route-phoneId="@Model.PhoneId">@Model.Name</a></div>

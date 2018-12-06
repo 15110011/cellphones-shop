@@ -168,13 +168,16 @@
                             {
                                 if (phone.ShortDescription == "New")
                                 {                                                             
-                                     @Html.Partial("PhonesSummary", phone)                                  
+                                    @Html.Partial("PhonesSummary", phone)                                  
                                 }
                             }
                         }
 
                     </div>
                 </div>
+            </div>
+            <div class="see-more d-flex justify-content-center">
+                <button class="btn btn-warning">See more</button>
             </div>
             <hr />
             <h3>Sale Products</h3>
@@ -185,18 +188,21 @@
                             foreach (Phone phone in Model)
                             {
                                 <!-- Product -->                                
-                               @Html.Partial("PhonesSummary", phone)                               
+                                @Html.Partial("PhonesSummary", phone)                               
                             }
                         }
                     </div>
                 </div>
+            </div>
+            <div class="see-more d-flex justify-content-center">
+                <button class="btn btn-warning">See more</button>
             </div>
         </div>
     </div>
 
     <!-- Ad -->
 
-    <div class="avds_xl">
+    <div class="avds_xl mt-4">
         <div class="container">
             <div class="row">
                 <div class="col">
