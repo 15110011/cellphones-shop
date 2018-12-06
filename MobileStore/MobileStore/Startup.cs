@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -44,8 +45,8 @@ namespace MobileStore
             services.AddDbContext<MobileStoreDbContext>(options =>
                 options.UseSqlServer(_configurationRoot.GetConnectionString("DefaultConnection")));
 
-            services.AddIdentity<IdentityUser, IdentityRole>()
-                .AddEntityFrameworkStores<MobileStoreDbContext>();
+            services.AddIdentity<IdentityUser,IdentityRole>() 
+                .AddEntityFrameworkStores<MobileStoreDbContext>(); 
 
             services.AddTransient<IPhoneRepository, PhoneRepository>();
             services.AddTransient<ICategoryRepository, CategoryRepository>();
@@ -54,9 +55,14 @@ namespace MobileStore
             services.AddScoped(sp => ShoppingCart.GetCart(sp));
 
             services.AddTransient<IOrderRepository, OrderRepository>();
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1); 
             services.AddMemoryCache();
             services.AddSession();
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.AccessDeniedPath = "/Account/AccessDenied";
+            });
+            //services.AddSingleton<IEmailSender, IEmailSender>();
         }
          
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -66,7 +72,7 @@ namespace MobileStore
             app.UseStatusCodePages();
             app.UseSession();
             app.UseMvcWithDefaultRoute();
-            app.UseIdentity();
+            
 
             if (env.IsDevelopment())
             {
@@ -80,6 +86,7 @@ namespace MobileStore
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseIdentity();
             app.UseCookiePolicy();  
 
             app.UseMvc(routes =>

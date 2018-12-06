@@ -1,9 +1,9 @@
-﻿@{
+﻿@model LoginViewModel
+@{
     Layout = null;
 }
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,19 +31,22 @@
             <div class="col-md-4 login-form">
                 <h3>Register</h3>
                 <br />
-                <form style="padding-top: 15px;">
+                <form asp-controller="Account" asp-action="Register" method="post" style="padding-top: 15px;">
                     <div class="form-group">
-                        <label for="exampleInputUserName">User Name</label>
-                        <input type="text" class="form-control" id="exampleInputUserName" aria-describedby="UserHelp" placeholder="Username">
+                        <label asp-for="UserName" for="exampleInputUserName">User Name</label>
+                        <input asp-for="UserName" type="text" class="form-control" id="exampleInputUserName" aria-describedby="UserHelp" placeholder="Username">
+                        <span asp-validation-for="UserName" class="text-danger"></span>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <label asp-for="Password" for="exampleInputPassword1">Password</label>
+                        <input asp-for="Password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <span asp-validation-for="UserName" class="text-danger"></span>
                     </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword2">Confirm password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Confirm password">
-                    </div>
+                    @*<div class="form-group">
+                        <label asp-for="Password" for="exampleInputPassword2">Confirm password</label>
+                        <input asp-for="Password" type="password" class="form-control" id="exampleInputPassword2" placeholder="Confirm password">
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>*@
                     <span class="ml-3 pt-2" style="float: right">or <a href="/Account/Login">Sign in</a></span>
                     <button type="submit" class="btn btn-primary" style="float: right">Register</button>
                 </form>
@@ -53,4 +56,4 @@
     </div>
 </body>
 
-</html>
+</html>s

@@ -1,6 +1,6 @@
 ﻿@model LoginViewModel
 @{
-    Layout = null;
+    Layout = null; 
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -28,14 +28,17 @@
     <div class="pt-5">
         <div class="col-md-4"></div>
         <div class="col-md-4 login-form">
-            <form>
+            <form asp-controller="Account" asp-action="Login" method="post"  role="form">
+                <input type="hidden" asp-for="ReturnUrl" />
                 <div class="form-group">
-                    <label for="exampleInputUserName">User Name</label>
-                    <input type="text" class="form-control" id="exampleInputUserName" aria-describedby="UserHelp" placeholder="Username">
+                    <label asp-for="UserName" for="exampleInputUserName">User Name</label>
+                    <input asp-for="UserName" type="text" class="form-control" id="exampleInputUserName" aria-describedby="UserHelp" placeholder="Username">
+                    <span asp-validation-for="UserName" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <label asp-for="Password" for="exampleInputPassword1">Password</label>
+                    <input asp-for="Password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <span asp-validation-for="Password" class="text-danger"></span>
                 </div>
                 <span class="ml-3 pt-2" style="float: right">or &nbsp;<a href="/Account/Register">Sign up</a></span>
                 <button type="submit" class="btn btn-primary" style="float: right">Login</button>

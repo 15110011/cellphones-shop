@@ -1,0 +1,21 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Identity.EntityFrameworkCore
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@if (ViewBag.Status==true)
+    {
+        <form asp-area="Identity" asp-controller="Account" asp-action="Logout" id="logoutForm" method="post" class="navbar-right">
+            <div class="login" style="margin-left: 190px">
+                <a>@ViewBag.username</a>&nbsp;|
+                <a href="javascript:document.getElementById('logoutForm').submit()">Log out</a>
+            </div>
+        </form>
+    }
+ else
+    {
+        <div class="login" style="margin-left: 190px">
+            <a asp-controller="Account" asp-action="Login">Log in</a>&nbsp;|
+            <a asp-controller="Account" asp-action="Register">Register</a>
+        </div>
+    }
