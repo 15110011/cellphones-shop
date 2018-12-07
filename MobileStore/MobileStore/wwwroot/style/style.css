@@ -58,3 +58,16 @@
 .home a:hover {
     color: beige;
 }
+
+.search .search_icon i {
+    color: #1b1b1b;
+}
+
+.search .search_icon i:hover {
+    color: #e95a5a;
+}
+.search-form form {
+    border: 1px solid;
+    border-radius: 3px;
+    margin-right: 59px;
+}

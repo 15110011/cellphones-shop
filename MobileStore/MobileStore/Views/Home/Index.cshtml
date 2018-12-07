@@ -168,13 +168,16 @@
                             {
                                 if (phone.ShortDescription == "New")
                                 {                                                             
-                                     @Html.Partial("PhonesSummary", phone)                                  
+                                    @Html.Partial("PhonesSummary", phone)                                  
                                 }
                             }
                         }
 
                     </div>
                 </div>
+            </div>
+            <div class="see-more d-flex justify-content-center">
+                <button class="btn btn-warning">See more</button>
             </div>
             <hr />
             <h3>Sale Products</h3>
@@ -185,18 +188,21 @@
                             foreach (Phone phone in Model)
                             {
                                 <!-- Product -->                                
-                               @Html.Partial("PhonesSummary", phone)                               
+                                @Html.Partial("PhonesSummary", phone)                               
                             }
                         }
                     </div>
                 </div>
+            </div>
+            <div class="see-more d-flex justify-content-center">
+                <button class="btn btn-warning">See more</button>
             </div>
         </div>
     </div>
 
     <!-- Ad -->
 
-    <div class="avds_xl">
+    <div class="avds_xl mt-4">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -225,7 +231,7 @@
                         <div class="icon_box_image"><img src="images/icon_1.svg" alt=""></div>
                         <div class="icon_box_title">Free Shipping Worldwide</div>
                         <div class="icon_box_text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie.</p>
+                            <p>While feedback is intended as an open forum, we have guidelines and policies to ensure it's used constructively and fairly.</p>
                         </div>
                     </div>
                 </div>
@@ -236,7 +242,7 @@
                         <div class="icon_box_image"><img src="images/icon_2.svg" alt=""></div>
                         <div class="icon_box_title">Free Returns</div>
                         <div class="icon_box_text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie.</p>
+                            <p>When you buy on Mobile Store, in most cases, we guarantee that you'll get your item or your money back.</p>
                         </div>
                     </div>
                 </div>
@@ -247,7 +253,7 @@
                         <div class="icon_box_image"><img src="images/icon_3.svg" alt=""></div>
                         <div class="icon_box_title">24h Fast Support</div>
                         <div class="icon_box_text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie.</p>
+                            <p>If you have any questions. Feel free to tell us. We always willing support you with any problems.</p>
                         </div>
                     </div>
                 </div>
@@ -269,7 +275,7 @@
                 <div class="col-lg-8 offset-lg-2">
                     <div class="newsletter_content text-center">
                         <div class="newsletter_title">Subscribe to our newsletter</div>
-                        <div class="newsletter_text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros</p></div>
+                        <div class="newsletter_text"><p>We collect and use your personal information to allow us to provide services and features to meet your needs, and to customize and improve our services to make your experience more secure and convenient</p></div>
                         <div class="newsletter_form_container">
                             <form action="#" id="newsletter_form" class="newsletter_form">
                                 <input type="email" class="newsletter_input" required="required">

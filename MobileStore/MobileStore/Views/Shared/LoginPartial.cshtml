@@ -6,9 +6,13 @@
 @if (ViewBag.Status==true)
     {
         <form asp-area="Identity" asp-controller="Account" asp-action="Logout" id="logoutForm" method="post" class="navbar-right">
-            <div class="login" style="margin-left: 190px">
-                <a>@ViewBag.username</a>&nbsp;|
-                <a href="javascript:document.getElementById('logoutForm').submit()">Log out</a>
+            <div class="dropdown login" style="margin-left: 190px">
+                <a style="color: #767676; cursor: pointer;" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    @ViewBag.username
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="javascript:document.getElementById('logoutForm').submit()">Log out</a>
+                </div>
             </div>
         </form>
     }
