@@ -55,5 +55,12 @@ namespace MobileStore.Controllers
             return RedirectToAction("Index");
         }
 
+        public RedirectToActionResult ClearFromShoppingCart(int cartId)
+        {
+            _shoppingCart.ClearCart();
+          
+            return RedirectToAction("Index");
+        }
+
     }
 }
