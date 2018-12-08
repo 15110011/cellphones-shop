@@ -24,7 +24,7 @@ using MobileStore.ViewModels;
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6ce25b958d5e9954e3447f468a8ca4376b36f156", @"/Views/Phone/List.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e71c6bd813308be2a7d70b6b8c82641a05b139ce", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6ddd7fcfba2a390d37f36b135b859d7c1a46e5a9", @"/Views/_ViewImports.cshtml")]
     public class Views_Phone_List : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<PhonesListViewModel>
     {
         #pragma warning disable 1998
