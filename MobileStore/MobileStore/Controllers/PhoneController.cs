@@ -55,7 +55,24 @@ namespace MobileStore.Controllers
             return View(phone);
         }
 
+        public ViewResult Search(string searchString)
+        {
+            string _searchString = searchString;
+            IEnumerable<Phone> phones;
+            string currentCategory = string.Empty;
 
+            if (string.IsNullOrEmpty(_searchString))
+            {
+                phones = _phoneRepository.Phones.OrderBy(p => p.PhoneId);
+            }
+            else
+            {
+                phones = _phoneRepository.Phones.Where(p => p.Name.ToLower().Contains(_searchString.ToLower())
+                ||p.Category.CategoryName.ToLower().Contains(_searchString.ToLower()));                
+            }
+
+            return View("~/Views/Phone/List.cshtml", new PhonesListViewModel { Phones = phones, CurrentCategory = "All phones" });
+        }
     }
     
 }

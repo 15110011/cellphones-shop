@@ -1,6 +1,6 @@
-﻿
+﻿@model CheckoutViewModel
 <h1>
-    @ViewBag.CheckoutCompleteMessage        
+    @ViewBag.CheckoutCompleteMessage
 </h1>
 
 <div class="container" style="color: black">
@@ -8,56 +8,27 @@
         <h4>Your order:</h4>
         <table class="table">
             <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">Product</th>
-                <th scope="col">Amount</th>
-                <th scope="col">Price</th>
-            </tr>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Product</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Price</th>
+                </tr>
             </thead>
             <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Iphone 7</td>
-                <td>$500</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Ipad Air 2</td>
-                <td>$2000</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Iphone Xs</td>
-                <td>$899</td>
-                <td>1</td>
-            </tr>
+                @{ int i = 1;}
+                @foreach (var line in Model.ShoppingCart.ShoppingCartItems)
+                {
+                    <tr>
+                        <th scope="row">@(i++)</th>
+                        <td>@line.Phone.Name</td>
+                        <td>@line.Amount</td>
+                        <td>@line.Phone.Price</td>
+                    </tr>
+                }                
             </tbody>
         </table>
-        <div class="float-right">Total: $3000</div>
+        <div class="float-right">Total: @Model.ShoppingCartTotal.ToString("c")</div>
     </div>
-    <hr style="margin-top: 45px;"/>   
-    <div class="order-address">
-        <h4>Your address:</h4>
-        <table class="table">
-            <thead>
-            <tr>
-                <th scope="col">Name</th>
-                <th scope="col">Address</th>
-                <th scope="col">Phone number</th>
-                <th scope="col">Email</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th scope="row">Tran Duc Anh</th>
-                <td>42b Ho Ba Phan, district 9, Ho Chi Minh city</td>
-                <td>0123023214</td>
-                <td>test@gmail.com</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
+    <hr style="margin-top: 45px;" /> 
 </div>

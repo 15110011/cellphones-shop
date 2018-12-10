@@ -96,8 +96,8 @@
                                         </a>
                                     </div>
                                     <div class="search">
-                                        <div class="search_icon">
-                                            <a onclick="myFunction()"><i class="fas fa-search"></i></a>
+                                        <div class="search_icon" >
+                                            <a  onclick="myFunction()"><i class="fas fa-search"></i></a>
                                         </div>
                                     </div>
                                     <div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
@@ -110,8 +110,8 @@
 
             <!-- Search Panel -->
             <div id="myDIV" class="search-form float-right" style="display: none;">
-                <form action="#">
-                    <input type="text" class="search_input" placeholder="Search" required="required">
+                <form asp-controller="Phone" asp-action="Search" method="get">
+                    <input type="text" class="search_input" placeholder="Search" name="searchString" value="@ViewData["searchString"]" required="required">
                 </form>
             </div>
             <!-- Social -->

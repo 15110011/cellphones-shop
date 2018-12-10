@@ -78,8 +78,7 @@
                                     <!-- Country -->
                                     <label asp-for="Order.Country">Country*</label>                                    
                                     <select asp-for="Order.Country" name="checkout_country" id="checkout_country" class="dropdown_item_select checkout_input" require="required">
-                                        <option></option>
-                                        <option>VietNam</option>
+                                        <option selected="selected">VietNam</option>
                                         <option>US</option>
                                         <option>UK</option>
                                         <option>China</option>
@@ -145,7 +144,7 @@
                                 </li>
                                 <li class="d-flex flex-row align-items-center justify-content-start">
                                     <div class="order_list_title">Total</div>
-                                    <div class="order_list_value ml-auto">@Model.ShoppingCartTotal.ToString("c")</div>
+                                    <div class="order_list_value ml-auto"><@Model.ShoppingCartTotal.ToString("c")</div>
                                 </li>
                             </ul>
                         </div>

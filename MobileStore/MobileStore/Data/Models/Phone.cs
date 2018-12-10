@@ -19,6 +19,7 @@ namespace MobileStore.Data.Models
         public string ImageDetail3 { get; set; }
         public bool IsPreferredPhone { get; set; }
         public int CategoryId { get; set; }
+        public DateTime PhonePlaced { get; set; }
         public virtual Category Category { get; set; }
     }
 }

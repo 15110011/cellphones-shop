@@ -46,8 +46,7 @@ namespace MobileStore.Controllers
             }            
             if (ModelState.IsValid)
             {
-                _orderRepository.CreateOrder(order);
-                _shoppingCart.ClearCart();
+                _orderRepository.CreateOrder(order);                
                 return RedirectToAction("CheckoutComplete");
             }
             var checkoutCartViewModel = new CheckoutViewModel
@@ -60,8 +59,17 @@ namespace MobileStore.Controllers
         }
         public IActionResult CheckoutComplete()
         {
+            var items = _shoppingCart.GetShoppingCartItems();
+            _shoppingCart.ShoppingCartItems = items;            
             ViewBag.CheckoutCompleteMessage = "Thanks for your order! :) ";
-            return View();
+            var checkoutCartViewModel = new CheckoutViewModel
+            {
+                Order = _order,
+                ShoppingCart = _shoppingCart,
+                ShoppingCartTotal = _shoppingCart.GetShoppingCartTotal()
+            };
+            _shoppingCart.ClearCart();
+            return View(checkoutCartViewModel);
         }
 
     }
