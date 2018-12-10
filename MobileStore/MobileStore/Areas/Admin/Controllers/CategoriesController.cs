@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -11,8 +12,8 @@ using MobileStore.Data.Models;
 namespace MobileStore.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class CategoriesController : Controller
-    {
+    public class CategoriesController : Controller    {
+        
         private readonly MobileStoreDbContext _context;
 
         public CategoriesController(MobileStoreDbContext context)
