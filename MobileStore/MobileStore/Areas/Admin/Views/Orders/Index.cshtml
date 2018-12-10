@@ -1,4 +1,4 @@
-﻿@model MobileStore.Data.Models.Phone
+﻿@model IEnumerable<MobileStore.Data.Models.Order>
 
 @{
     Layout = null;
@@ -105,7 +105,7 @@
                                 <span>Navigation</span>
                             </li>
                             <li>
-                                <a href="/Admin" class="auto">
+                                <a href="/Admin" class="Admin">
                                     <i class="glyphicon glyphicon-stats icon text-primary-dker"></i>
                                     <span class="font-bold">Dashboard</span>
                                 </a>
@@ -196,58 +196,104 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-3"></div>
-                                <div class="col-md-6">
-                                    <form asp-action="Create">
-                                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                                        <div class="form-group">
-                                            <label asp-for="Name" class="control-label"></label>
-                                            <input asp-for="Name" class="form-control" />
-                                            <span asp-validation-for="Name" class="text-danger"></span>
-                                        </div>
-                                        <div class="form-group">
-                                            <label asp-for="ShortDescription" class="control-label"></label>
-                                            <input asp-for="ShortDescription" class="form-control" />
-                                            <span asp-validation-for="ShortDescription" class="text-danger"></span>
-                                        </div>
-                                        <div class="form-group">
-                                            <label asp-for="Price" class="control-label"></label>
-                                            <input asp-for="Price" class="form-control" />
-                                            <span asp-validation-for="Price" class="text-danger"></span>
-                                        </div>
-                                        @*<div class="form-group">
-                                            <label asp-for="ImageUrl" class="control-label"></label>
-                                            <input asp-for="ImageUrl" class="form-control" />
-                                            <span asp-validation-for="ImageUrl" class="text-danger"></span>
-                                        </div>
-                                        <div class="form-group">
-                                            <label asp-for="ImageThumbnailUrl" class="control-label"></label>
-                                            <input asp-for="ImageThumbnailUrl" class="form-control" />
-                                            <span asp-validation-for="ImageThumbnailUrl" class="text-danger"></span>
-                                        </div>*@
-                                        <div class="form-group">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input asp-for="IsPreferredPhone" /> @Html.DisplayNameFor(model => model.IsPreferredPhone)
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label asp-for="CategoryId" class="control-label"></label>
-                                            <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="submit" value="Create" class="btn btn-success" />
-                                            <button class="btn btn-danger" style="display: inline">
-                                                <a asp-action="Index">Back to List</a>
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="col-md-3">
-                                </div>
+                                <div class="col">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    Order ID
+                                                </th>
+                                                <th>
+                                                    First Name
+                                                </th>
+                                                <th>
+                                                    Address
+                                                </th>
+                                                <th>
+                                                    Country
+                                                </th>
+                                                <th>
+                                                    Phone Number
+                                                </th>
+                                                <th>
+                                                    Email
+                                                </th>
+                                                <th>
+                                                    Order Total
+                                                </th>
+                                                <th>
+                                                    Order Placed
+                                                </th>
+                                                <th>
+                                                    Action
+                                                </th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in Model)
+                                            {
+                                                <tr>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.OrderId)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.FirstName)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.AddressLine1)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.Country)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.PhoneNumber)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.Email)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.OrderTotal)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.OrderPlaced)
+                                                    </td>
+                                                    <td class="d-flex justify-content-center" style="text-align: center;">
+                                                        
+                                                        <a asp-action="Delete" asp-route-id="@item.OrderId" data-toggle="modal" data-target="#exampleModal">
+                                                            <i class="fas fa-times" style="color: red;"></i>
+                                                        </a>
+
+                                                        <!-- Modal -->
+                                                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog" role="document">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                    <div class="form-group">
+                                        <button class="btn btn-danger" style="display: inline">
+                                            <a href="/Admin">Back to List</a>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -265,6 +311,3 @@
 </body>
 </html>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
