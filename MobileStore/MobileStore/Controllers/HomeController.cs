@@ -56,7 +56,24 @@ namespace MobileStore.Controllers
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
+            if (HttpContext.Session.TryGetValue("login", out var data))
+            {
+                var bf = new BinaryFormatter();
 
+                string strData;
+                using (var ms = new MemoryStream(data))
+                {
+                    strData = bf.Deserialize(ms) as string;
+                }
+                if (strData.Length >= 2)
+                {
+                    ViewBag.Status = true;
+                    ViewBag.username = strData;
+                }
+                else
+                    ViewBag.Status = false;
+
+            }
             return View();
         }
 

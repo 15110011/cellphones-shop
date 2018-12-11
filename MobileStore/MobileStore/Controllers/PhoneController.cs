@@ -4,7 +4,9 @@ using MobileStore.Data.Models;
 using MobileStore.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Threading.Tasks;
 
 namespace MobileStore.Controllers
@@ -37,7 +39,24 @@ namespace MobileStore.Controllers
                 currentCategory = _category;
             }
 
+            if (HttpContext.Session.TryGetValue("login", out var data))
+            {
+                var bf = new BinaryFormatter();
 
+                string strData;
+                using (var ms = new MemoryStream(data))
+                {
+                    strData = bf.Deserialize(ms) as string;
+                }
+                if (strData.Length >= 2)
+                {
+                    ViewBag.Status = true;
+                    ViewBag.username = strData;
+                }
+                else
+                    ViewBag.Status = false;
+
+            }
             return View(new PhonesListViewModel
             {
                 Phones = phones,
@@ -51,6 +70,24 @@ namespace MobileStore.Controllers
             if (phone == null)
             {
                 return View("~/Views/Error/Error.cshtml");
+            }
+            if (HttpContext.Session.TryGetValue("login", out var data))
+            {
+                var bf = new BinaryFormatter();
+
+                string strData;
+                using (var ms = new MemoryStream(data))
+                {
+                    strData = bf.Deserialize(ms) as string;
+                }
+                if (strData.Length >= 2)
+                {
+                    ViewBag.Status = true;
+                    ViewBag.username = strData;
+                }
+                else
+                    ViewBag.Status = false;
+
             }
             return View(phone);
         }
@@ -70,7 +107,24 @@ namespace MobileStore.Controllers
                 phones = _phoneRepository.Phones.Where(p => p.Name.ToLower().Contains(_searchString.ToLower())
                 ||p.Category.CategoryName.ToLower().Contains(_searchString.ToLower()));                
             }
+            if (HttpContext.Session.TryGetValue("login", out var data))
+            {
+                var bf = new BinaryFormatter();
 
+                string strData;
+                using (var ms = new MemoryStream(data))
+                {
+                    strData = bf.Deserialize(ms) as string;
+                }
+                if (strData.Length >= 2)
+                {
+                    ViewBag.Status = true;
+                    ViewBag.username = strData;
+                }
+                else
+                    ViewBag.Status = false;
+
+            }
             return View("~/Views/Phone/List.cshtml", new PhonesListViewModel { Phones = phones, CurrentCategory = "All phones" });
         }
     }
