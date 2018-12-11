@@ -59,7 +59,7 @@ using MobileStore.ViewModels;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             BeginContext(14, 56, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ce74de704e6c4ff9a4e267cd9aca588e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "e26e73daa06348a0a90cc64f779f0f65", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -78,7 +78,7 @@ using MobileStore.ViewModels;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(72, 55, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "c07a4d52ad3549918043a611b32b6329", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "e740fd6e6d8949a2b9a1ae39391879c4", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -97,7 +97,7 @@ using MobileStore.ViewModels;
             WriteLiteral("\r\n<div class=\"product\">\r\n    ");
             EndContext();
             BeginContext(156, 169, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a85a09f559ac487eafb130294ce6de71", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "637228ccbd2e4d5791d6e44fedae8140", async() => {
                 BeginContext(238, 41, true);
                 WriteLiteral("\r\n        <div class=\"product_image\"><img");
                 EndContext();
@@ -154,7 +154,7 @@ WriteAttributeValue("", 285, Model.ImageUrl, 285, 15, false);
             WriteLiteral("</a></div>\r\n    <div class=\"product_content text-center\">\r\n        <div class=\"product_title\">");
             EndContext();
             BeginContext(511, 97, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a7a5b4dff64476690229b80a0c0b6ff", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "14b87e174c5f4dbaaf3f6dff414bf74c", async() => {
                 BeginContext(594, 10, false);
 #line 10 "C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\Views\Shared\PhonesSummary.cshtml"
                                                                                                                 Write(Model.Name);
@@ -205,7 +205,7 @@ WriteAttributeValue("", 285, Model.ImageUrl, 285, 15, false);
             WriteLiteral("</div>\r\n        <button class=\"btn btn-success mt-3\">\r\n            ");
             EndContext();
             BeginContext(764, 167, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a9a5c8d2d867492fb5b9e92173ae25a9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0ba0367bff324b42af7d9b730c09e738", async() => {
                 BeginContext(916, 11, true);
                 WriteLiteral("Add to cart");
                 EndContext();

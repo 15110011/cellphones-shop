@@ -1,0 +1,93 @@
+﻿@model MobileStore.Data.Models.Order
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+
+<div>
+    <h4>Order</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AddressLine1)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AddressLine1)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AddressLine2)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AddressLine2)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ZipCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ZipCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.State)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.State)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Country)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Country)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderTotal)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OrderTotal)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderPlaced)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OrderPlaced)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.OrderId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+</body>
+</html>

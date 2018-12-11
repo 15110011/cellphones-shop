@@ -131,3 +131,8 @@ C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\obj\Debug
 C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\Razor\Views\Register\Index.g.cshtml.cs
 C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\LoginPartial.g.cshtml.cs
 C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\MobileStore.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Orders\Create.g.cshtml.cs
+C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Orders\Delete.g.cshtml.cs
+C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Orders\Details.g.cshtml.cs
+C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Orders\Edit.g.cshtml.cs
+C:\Users\User\Documents\GitHub\cellphones-shop\MobileStore\MobileStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Orders\Index.g.cshtml.cs

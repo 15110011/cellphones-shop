@@ -59,7 +59,7 @@
                                     <div><img src="@line.Phone.ImageUrl" alt=""></div>
                                 </div>
                                 <div class="cart_item_name_container">
-                                    <div class="cart_item_name"><a href="#">@line.Phone.Name</a></div>                                    
+                                    <div class="cart_item_name"><a href="#">@line.Phone.Name</a></div>
                                 </div>
                             </div>
                             <!-- Price -->
@@ -69,31 +69,26 @@
                                 <div class="product_quantity_container">
                                     <div class="product_quantity clearfix">
                                         <span>Qty</span>
-                                        <input id="quantity_input" type="text" pattern="[0-9]*" value="@line.Amount">
+                                        <input id="quantity_input" type="text" pattern="0" value="@line.Amount">
                                         <div class="quantity_buttons">
-                                            <div id="quantity_inc_button" class="quantity_inc quantity_control">
-                                            <i class="fa fa-chevron-up" aria-hidden="true">
-                                            <a asp-controller="ShoppingCart"
-                                               asp-action="AddToShoppingCart"
-                                               asp-route-phoneId="@line.Phone.PhoneId"></a>
-                                                   </i>
+                                            <div @*id="quantity_inc_button"*@ class="quantity_inc quantity_control">
+                                                <a asp-controller="ShoppingCart"
+                                                   asp-action="AddToShoppingCart"
+                                                   asp-route-phoneId="@line.Phone.PhoneId" class="fa fa-chevron-up" aria-hidden="true"></a>                                              
                                             </div>
-                                            <div id="quantity_dec_button" class="quantity_dec quantity_control">
-                                                <i class="fa fa-chevron-down" aria-hidden="true">
+                                            <div @*id="quantity_dec_button"*@ class="quantity_dec quantity_control">                                               
                                                     <a asp-controller="ShoppingCart"
                                                        asp-action="RemoveFromShoppingCart"
-                                                       asp-route-phoneId="@line.Phone.PhoneId"></a>
-                                                </i>
+                                                       asp-route-phoneId="@line.Phone.PhoneId" class="fa fa-chevron-down" aria-hidden="true"></a>                                                
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                           
-                            <!-- Total -->
-                            <div class="cart_item_total">@((line.Phone.Price * line.Amount).ToString("c"))</div>
-                        </div>
 
+                            <!-- Total -->
+                            <div class="cart_item_total">@((line.Phone.Price * line.Amount).ToString("c"))</div>                        
+                        </div>
                     </div>
                 </div>
             }
